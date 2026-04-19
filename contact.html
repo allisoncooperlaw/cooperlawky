@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Consultation | Cooper Law</title>
+<meta name="description" content="Ready to protect the people you love? Submit a short intake form to get started with Cooper Law. Estate planning for families in KY, IN &amp; OH — remotely and in person.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="section alt" style="text-align:center;padding:64px 40px 48px">
+  <div class="container">
+    <span class="eyebrow">Get Started</span>
+    <h2>Ready to protect the people you love?</h2>
+    <p style="font-size:15px;color:var(--mid);max-width:520px;margin:0 auto;line-height:1.75">Submit a short intake form and I&rsquo;ll get back to you as soon as I can. If you have an upcoming surgery or time-sensitive situation, please note it in your message.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1.6fr;gap:52px;align-items:start">
+
+      <!-- CONTACT INFO -->
+      <div>
+        <h3 style="font-size:20px;margin-bottom:20px">Contact information</h3>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div>
+            <p style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--light);margin-bottom:4px">Attorney</p>
+            <p style="font-size:15px;font-weight:500;color:var(--dark);margin:0">Allison Cooper, JD, CPA, CFP&reg;</p>
+          </div>
+          <div>
+            <p style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--light);margin-bottom:4px">Phone</p>
+            <p style="margin:0"><a href="tel:5027541351" style="font-size:15px;color:var(--rose);font-weight:500">502-754-1351</a></p>
+          </div>
+          <div>
+            <p style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--light);margin-bottom:4px">Email</p>
+            <p style="margin:0"><a href="mailto:allison@cooperlawky.com" style="font-size:15px;color:var(--rose);font-weight:500">allison@cooperlawky.com</a></p>
+          </div>
+          <div>
+            <p style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--light);margin-bottom:4px">Office address</p>
+            <p style="font-size:14px;color:var(--mid);margin:0;line-height:1.6">9200 Shelbyville Road, #600<br>Louisville, KY 40222</p>
+          </div>
+          <div>
+            <p style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--light);margin-bottom:4px">Licensed in</p>
+            <div class="pills" style="margin:0"><span class="pill">Kentucky</span><span class="pill">Indiana</span><span class="pill">Ohio</span></div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:28px">
+          <h4>Need documents as soon as possible?</h4>
+          <p>If you have an upcoming surgery, diagnosis, or travel and need documents fast, visit the <a href="priority.html" style="color:var(--rose)">Priority Planning page</a> for a shorter, faster intake process.</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <h3 style="font-size:20px;margin-bottom:20px">Consultation Request</h3>
+
+        <form id="consultForm" action="https://formspree.io/f/xeevglqy" method="POST">
+          <input type="hidden" name="_subject" value="Consultation Request — Cooper Law">
+          <input type="hidden" name="form_type" value="General Consultation">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c_first">First name <span style="color:var(--rose)">*</span></label>
+              <input type="text" id="c_first" name="first_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="c_last">Last name <span style="color:var(--rose)">*</span></label>
+              <input type="text" id="c_last" name="last_name" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c_email">Email address <span style="color:var(--rose)">*</span></label>
+              <input type="email" id="c_email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="c_phone">Phone <span style="color:var(--rose)">*</span></label>
+              <input type="tel" id="c_phone" name="phone" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Which state are you in? <span style="color:var(--rose)">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="state" value="Kentucky" required><span>Kentucky</span></label>
+              <label><input type="radio" name="state" value="Indiana"><span>Indiana</span></label>
+              <label><input type="radio" name="state" value="Ohio"><span>Ohio</span></label>
+              <label><input type="radio" name="state" value="Other"><span>Other</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Marital / relationship status <span style="color:var(--rose)">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="marital_status" value="Single" required><span>Single</span></label>
+              <label><input type="radio" name="marital_status" value="Married or partnered"><span>Married or partnered</span></label>
+              <label><input type="radio" name="marital_status" value="Divorced or widowed"><span>Divorced or widowed</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Minor children under 18? <span style="color:var(--rose)">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="minor_children" value="Yes" required><span>Yes</span></label>
+              <label><input type="radio" name="minor_children" value="No"><span>No</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c_referral">How did you hear about Cooper Law? <span style="color:var(--rose)">*</span></label>
+            <input type="text" id="c_referral" name="referral_source" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="c_goals">What are you hoping to accomplish? <span style="color:var(--rose)">*</span><span class="hint">2&ndash;3 sentences is plenty</span></label>
+            <textarea id="c_goals" name="planning_goals" class="form-control" rows="4" required placeholder="e.g. My husband and I have two young children and just bought a home. We want to make sure they're protected if something happens to us."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit rose">Submit Consultation Request</button>
+          <p class="form-note">I&rsquo;ll get back to you as soon as I can.</p>
+          <p style="font-size:11px;color:var(--light);line-height:1.6;margin-top:10px;padding:10px 12px;background:var(--off-white);border-radius:6px;border:1px solid var(--border)">
+            <strong style="color:var(--mid)">Please note:</strong> Submitting this form does not create an attorney-client relationship and does not constitute legal advice. Do not include highly confidential information in your message. An attorney-client relationship is only established upon execution of a signed engagement letter.
+          </p>
+        </form>
+
+        <div class="form-success" id="consultSuccess">
+          <h4>Thank you for reaching out to Cooper Law!</h4>
+          <p>I&rsquo;ll get back to you as soon as I can. In the meantime, feel free to browse the <a href="estate-planning.html" style="color:var(--rose)">Estate Planning</a> page if you&rsquo;d like to learn more.</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--mid)">Questions in the meantime? Email <a href="mailto:allison@cooperlawky.com" style="color:var(--rose)">allison@cooperlawky.com</a> or call <a href="tel:5027541351" style="color:var(--rose)">502-754-1351</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    setupForm('consultForm', 'consultSuccess', 'https://formspree.io/f/xeevglqy');
+  });
+</script>
+</body>
+</html>
