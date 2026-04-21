@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estate Planning Resources & Blog | Cooper Law</title>
+<meta name="description" content="Estate planning articles, guides, and resources from Allison Cooper, JD, CPA, CFP® — helping families in Kentucky, Indiana, and Ohio plan for the people they love.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+.blog-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: box-shadow 0.2s; text-decoration: none; display: block; }
+.blog-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+.blog-card-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 8px; display: block; }
+.blog-card-title { font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--dark); line-height: 1.3; margin-bottom: 8px; }
+.blog-card-excerpt { font-size: 12px; color: var(--mid); line-height: 1.7; margin-bottom: 12px; }
+.blog-card-meta { font-size: 11px; color: var(--light); }
+.blog-card-body { padding: 20px; }
+.blog-card-img { height: 160px; background: var(--rose-light); display: flex; align-items: center; justify-content: center; font-size: 40px; }
+.blog-card-img.green { background: var(--green-light); }
+.blog-card-img.gray { background: var(--off-white); }
+@media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="section alt" style="padding-bottom:32px">
+  <div class="container">
+    <span class="eyebrow">Resources</span>
+    <h2>Estate planning, explained in plain English.</h2>
+    <p class="lead">No jargon. No scare tactics. Just clear, honest information to help you make good decisions for the people you love.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="blog-grid" id="blog-posts">
+
+      <a href="blog/emergency-estate-planning.html" class="blog-card">
+        <div class="blog-card-img">&#9889;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Emergency Planning</span>
+          <div class="blog-card-title">Surgery Next Week? Here&rsquo;s What You Need to Do Before You Go In</div>
+          <p class="blog-card-excerpt">Most people put off estate planning for years. Then a diagnosis arrives, or surgery gets scheduled, and suddenly &ldquo;someday&rdquo; becomes &ldquo;this week.&rdquo;</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/will-vs-trust.html" class="blog-card">
+        <div class="blog-card-img gray">&#9878;&#65039;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Basics</span>
+          <div class="blog-card-title">Will vs. Trust: Which One Does Your Family Actually Need?</div>
+          <p class="blog-card-excerpt">Both involve a will. The difference is whether a trust is part of the plan &mdash; and that difference matters more than most people realize.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/unfunded-trust-mistakes.html" class="blog-card">
+        <div class="blog-card-img green">&#127974;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Trusts</span>
+          <div class="blog-card-title">You Have a Trust &mdash; But Does It Actually Hold Anything?</div>
+          <p class="blog-card-excerpt">One of the most common estate planning mistakes isn&rsquo;t forgetting to create a trust. It&rsquo;s creating one and never putting anything in it.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/dying-without-a-will.html" class="blog-card">
+        <div class="blog-card-img">&#128680;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Basics</span>
+          <div class="blog-card-title">What Happens If You Die Without a Will?</div>
+          <p class="blog-card-excerpt">The state has a plan for your assets. You probably won&rsquo;t like it. Here&rsquo;s what intestacy actually means for your family.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/diy-estate-planning.html" class="blog-card">
+        <div class="blog-card-img gray">&#128187;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Basics</span>
+          <div class="blog-card-title">Can I Do My Own Estate Plan?</div>
+          <p class="blog-card-excerpt">The honest answer is: sometimes. Here&rsquo;s when DIY works, when it breaks down, and what actually goes wrong with online wills and trusts.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/poa-vs-living-will.html" class="blog-card">
+        <div class="blog-card-img green">&#128203;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Documents</span>
+          <div class="blog-card-title">Power of Attorney vs. Living Will &mdash; What&rsquo;s the Difference?</div>
+          <p class="blog-card-excerpt">They sound similar. They do completely different things. And you need both. Here&rsquo;s what each one actually does.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/choosing-a-guardian.html" class="blog-card">
+        <div class="blog-card-img">&#128118;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Parents</span>
+          <div class="blog-card-title">How to Choose a Guardian for Your Children</div>
+          <p class="blog-card-excerpt">It&rsquo;s the hardest question in estate planning. It&rsquo;s also the most important one. Here&rsquo;s how to think through it without overthinking it.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/child-turned-18.html" class="blog-card">
+        <div class="blog-card-img">&#127891;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Young Adults</span>
+          <div class="blog-card-title">Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost</div>
+          <p class="blog-card-excerpt">The moment your child turns 18, you lose the legal right to make their medical decisions, access their bank accounts, or even talk to their doctor. Here&rsquo;s what to do about it.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/college-estate-planning.html" class="blog-card">
+        <div class="blog-card-img">&#127891;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Young Adults</span>
+          <div class="blog-card-title">Estate Planning Before Your Kid Goes to College</div>
+          <p class="blog-card-excerpt">Move-in day is exciting. But if your child is 18 and doesn&rsquo;t have a power of attorney and healthcare directive, you&rsquo;re sending them off without a safety net.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/study-abroad-documents.html" class="blog-card">
+        <div class="blog-card-img">&#9992;&#65039;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Young Adults</span>
+          <div class="blog-card-title">Study Abroad? The Documents Your College Student Needs First</div>
+          <p class="blog-card-excerpt">Your child is about to leave the country. If something goes wrong overseas, you need legal authority to help &mdash; and a passport won&rsquo;t give you that.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; April 2026</div>
+        </div>
+      </a>
+
+      <!-- COMING SOON -->
+      <div class="blog-card" style="opacity:0.5;cursor:default">
+        <div class="blog-card-img gray">&#128209;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Documents</span>
+          <div class="blog-card-title">What Is a Pour-Over Will?</div>
+          <p class="blog-card-excerpt">It&rsquo;s not a standalone will. It&rsquo;s a safety net that works alongside your trust. Here&rsquo;s why it matters and what happens without one.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.5;cursor:default">
+        <div class="blog-card-img">&#128176;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Costs</span>
+          <div class="blog-card-title">How Much Does Estate Planning Actually Cost?</div>
+          <p class="blog-card-excerpt">Attorney fees, online services, and the cost of doing nothing. A straightforward breakdown of what estate planning costs in 2026.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.5;cursor:default">
+        <div class="blog-card-img green">&#9989;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Planning</span>
+          <div class="blog-card-title">The Estate Planning Checklist Most People Miss</div>
+          <p class="blog-card-excerpt">Documents are only part of it. Beneficiary designations, asset titling, and account registrations matter just as much. Here&rsquo;s the full list.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Ready to stop putting it off?</h2>
+  <p>Submit a short intake form and I&rsquo;ll get back to you as soon as I can.</p>
+  <div class="btn-group" style="justify-content:center">
+    <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+    <a href="priority.html" class="btn btn-outline">Need It in 48 Hours?</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+</body>
+</html>
