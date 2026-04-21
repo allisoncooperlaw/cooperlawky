@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Child Turned 18 — Here's What You Just Lost | Cooper Law</title>
+<meta name="description" content="When your child turns 18, you lose the legal right to make their medical decisions, talk to their doctor, or access their bank accounts. Here's what to do about it.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.post-hero { padding: 52px 0 40px; background: var(--warm-white); border-bottom: 1px solid var(--border-light); }
+.post-tag { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); margin-bottom: 12px; display: block; }
+.post-title { font-family: var(--serif); font-size: clamp(26px, 4vw, 42px); font-weight: 500; line-height: 1.25; margin-bottom: 12px; color: var(--dark); max-width: 720px; }
+.post-subtitle { font-size: 16px; color: var(--mid); line-height: 1.7; max-width: 640px; margin-bottom: 20px; }
+.post-meta { font-size: 12px; color: var(--light); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.post-meta span { display: flex; align-items: center; gap: 5px; }
+.post-body { max-width: 720px; margin: 0 auto; padding: 48px 40px; }
+.post-body h2 { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--dark); margin: 36px 0 12px; line-height: 1.3; }
+.post-body h3 { font-family: var(--sans); font-size: 17px; font-weight: 500; color: var(--dark); margin: 28px 0 8px; }
+.post-body p { font-size: 15px; color: var(--mid); line-height: 1.85; margin-bottom: 18px; }
+.post-body strong { color: var(--dark); font-weight: 500; }
+.post-body ul, .post-body ol { margin: 0 0 18px 24px; }
+.post-body li { font-size: 15px; color: var(--mid); line-height: 1.75; margin-bottom: 6px; }
+.post-callout { background: var(--rose-light); border-left: 3px solid var(--rose); border-radius: var(--radius-lg); padding: 18px 22px; margin: 24px 0; }
+.post-callout p { margin: 0; font-size: 14px; }
+.post-callout.green { background: var(--green-light); border-left-color: var(--green); }
+.post-cta { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 32px; margin: 40px 0; text-align: center; }
+.post-cta h3 { font-family: var(--sans); font-size: 18px; margin-bottom: 8px; }
+.post-cta p { font-size: 14px; margin-bottom: 18px; }
+.post-divider { border: none; border-top: 1px solid var(--border-light); margin: 36px 0; }
+.post-author { display: flex; align-items: center; gap: 16px; padding: 24px 0; border-top: 1px solid var(--border-light); }
+.post-author-photo { width: 56px; height: 56px; border-radius: 50%; background: var(--rose-light); overflow: hidden; flex-shrink: 0; }
+.post-author-photo img { width: 100%; height: 100%; object-fit: cover; }
+.post-author-name { font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.post-author-bio { font-size: 12px; color: var(--mid); line-height: 1.6; }
+.related-posts { background: var(--off-white); padding: 48px 40px; border-top: 1px solid var(--border-light); }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.related-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; text-decoration: none; display: block; }
+.related-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.related-card .tag { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 6px; display: block; }
+.related-card h4 { font-family: var(--serif); font-size: 16px; font-weight: 500; color: var(--dark); line-height: 1.35; }
+@media (max-width: 700px) { .post-body { padding: 32px 20px; } .related-grid { grid-template-columns: 1fr; } .related-posts { padding: 36px 20px; } }
+</style>
+</head>
+<body>
+<div id="nav-placeholder" data-base="../"></div>
+
+<div class="post-hero">
+  <div class="container">
+    <span class="post-tag">Parents &amp; Young Adults</span>
+    <h1 class="post-title">Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost</h1>
+    <p class="post-subtitle">Yesterday you could make every decision for them. Today you can&rsquo;t talk to their doctor without written permission.</p>
+    <div class="post-meta">
+      <span>&#9998; Allison Cooper, JD, CPA, CFP&reg;</span>
+      <span>&#128197; April 2026</span>
+      <span>&#128336; 5 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-body">
+
+  <p>On your child&rsquo;s 17th birthday, you can call their doctor, access their medical records, manage their bank account, and make every legal decision on their behalf. On their 18th birthday, you can do none of those things.</p>
+
+  <p>Nothing changes about your relationship. Nothing changes about how much you love them or how much they need you. But legally, everything changes. Your child is now an adult, and the law treats them like one &mdash; even if they&rsquo;re still living in your house and eating your groceries.</p>
+
+  <p>Most parents have no idea this is happening until something goes wrong.</p>
+
+  <h2>What you actually lose at 18</h2>
+
+  <h3>The right to medical information</h3>
+
+  <p>HIPAA &mdash; the federal health privacy law &mdash; treats your 18-year-old the same as any other adult. Their medical information is <em>theirs</em>. Healthcare providers cannot share it with you without your child&rsquo;s written authorization. That includes diagnosis information, treatment plans, test results, and even whether they&rsquo;ve been admitted to a hospital.</p>
+
+  <p>This isn&rsquo;t a technicality that hospitals overlook. It&rsquo;s federal law, and hospitals enforce it. If your child is unconscious after a car accident and you rush to the ER, the hospital may not be able to tell you what&rsquo;s happening or let you make treatment decisions &mdash; because nobody has legal authority to speak for your child.</p>
+
+  <h3>The right to make medical decisions</h3>
+
+  <p>If your child is incapacitated &mdash; unconscious, sedated, or otherwise unable to communicate &mdash; and there&rsquo;s no medical power of attorney on file, nobody has automatic authority to make medical decisions for them. Not you. Not their other parent. Nobody.</p>
+
+  <p>In an emergency, doctors will provide life-saving treatment regardless. But for anything beyond immediate stabilization &mdash; surgery decisions, treatment plans, whether to continue or withdraw care &mdash; the hospital needs someone with legal authority. Without a medical POA, that requires a court-appointed guardianship. That takes weeks and costs thousands of dollars &mdash; while your child is in a hospital bed.</p>
+
+  <h3>The right to manage their finances</h3>
+
+  <p>Your child&rsquo;s bank account, student loans, apartment lease, car insurance &mdash; you have no legal right to manage any of it once they turn 18 (unless you&rsquo;re a joint account holder). If they&rsquo;re incapacitated, their rent still comes due, their car payment still hits, and their tuition bill doesn&rsquo;t pause. Without a durable power of attorney, you can&rsquo;t touch any of it.</p>
+
+  <div class="post-callout">
+    <p><strong>The scenario that terrifies parents:</strong> Your 19-year-old is in a car accident 200 miles away at college. They&rsquo;re unconscious. You drive to the hospital. The doctor says they need surgery. You say &ldquo;do it.&rdquo; The hospital says &ldquo;we need authorization from someone with legal authority.&rdquo; You say &ldquo;I&rsquo;m their parent.&rdquo; The hospital says &ldquo;they&rsquo;re an adult.&rdquo; This is real. This happens. And it&rsquo;s completely preventable.</p>
+  </div>
+
+  <h2>The fix is simple</h2>
+
+  <p>Four documents solve this entire problem. They take about a week to prepare, they&rsquo;re straightforward for young adults with simple situations, and they give you back the legal ability to help your child when they need you most.</p>
+
+  <p><strong>Medical power of attorney</strong> &mdash; names you (or both parents) as the person authorized to make medical decisions if your child can&rsquo;t make them.</p>
+
+  <p><strong>HIPAA authorization</strong> &mdash; gives you the legal right to access your child&rsquo;s medical information. This is the document that lets the doctor talk to you.</p>
+
+  <p><strong>Durable power of attorney</strong> &mdash; gives you authority to manage your child&rsquo;s financial affairs (pay bills, handle insurance, manage accounts) if they&rsquo;re incapacitated.</p>
+
+  <p><strong>Living will</strong> &mdash; documents your child&rsquo;s wishes about end-of-life medical treatment. Nobody wants to think about this for their 18-year-old. But having it means nobody has to guess.</p>
+
+  <p>A simple will rounds out the package &mdash; not because your 18-year-old has a complex estate, but because it creates a complete legal foundation they can build on for the rest of their life.</p>
+
+  <h2>When to do this</h2>
+
+  <p>The ideal moments are natural transition points where the conversation feels organic rather than morbid:</p>
+
+  <ul>
+    <li><strong>18th birthday</strong> &mdash; the milestone itself. &ldquo;You&rsquo;re an adult now, and part of being an adult is having your legal documents in order.&rdquo;</li>
+    <li><strong>Before college move-in</strong> &mdash; along with setting up the dorm room and buying the meal plan, get the legal documents signed. It&rsquo;s part of the preparation.</li>
+    <li><strong>Before study abroad</strong> &mdash; if your child is leaving the country, these documents are essential, not optional.</li>
+    <li><strong>High school graduation gift</strong> &mdash; unconventional, but genuinely one of the most meaningful things you can give them.</li>
+  </ul>
+
+  <div class="post-callout green">
+    <p><strong>Cooper Law offers a Young Adult Protection Plan</strong> for clients under 25 &mdash; a discounted flat-fee package that includes a simple will, durable POA, living will, medical POA, and HIPAA authorization. <a href="../young-adults.html" style="color:var(--green);font-weight:500">Learn more &rarr;</a></p>
+  </div>
+
+  <h2>The conversation</h2>
+
+  <p>Most young adults won&rsquo;t bring this up themselves. That&rsquo;s fine &mdash; this is a parent-initiated conversation. Keep it simple: &ldquo;Now that you&rsquo;re 18, we need to make sure that if anything ever happens to you, we can actually help. There are a few legal documents that make that possible. It takes about an hour of your time and then it&rsquo;s done.&rdquo;</p>
+
+  <p>That&rsquo;s it. No drama. No morbid hypotheticals. Just a practical step that every adult &mdash; including brand-new ones &mdash; should have in place.</p>
+
+  <div class="post-cta">
+    <h3>Ready to protect your young adult?</h3>
+    <p>The Young Adult Protection Plan is a flat $900 for clients under 25. Submit an intake form and mention your child&rsquo;s age.</p>
+    <a href="../contact.html" class="btn btn-rose">Request a Consultation</a>
+  </div>
+
+  <hr class="post-divider">
+  <div class="post-author">
+    <div class="post-author-photo"><img src="../images/allison.jpg" alt="Allison Cooper"></div>
+    <div>
+      <div class="post-author-name">Allison Cooper, JD, CPA, CFP&reg;</div>
+      <div class="post-author-bio">Allison Cooper is the founder of Cooper Law, LLC, an estate planning firm based in Louisville, Kentucky. She holds a JD, CPA, and CFP&reg; and is licensed to practice law in Kentucky, Indiana, and Ohio.</div>
+    </div>
+  </div>
+</div>
+
+<div class="related-posts">
+  <div style="max-width:720px;margin:0 auto"><span class="eyebrow">Keep reading</span><h3 style="font-size:20px;margin-bottom:0">More from Cooper Law</h3></div>
+  <div class="related-grid">
+    <a href="college-estate-planning.html" class="related-card"><span class="tag">Parents &amp; Young Adults</span><h4>Going to College? The Documents Every Student Needs Before Move-In Day</h4></a>
+    <a href="poa-vs-living-will.html" class="related-card"><span class="tag">Documents</span><h4>Power of Attorney vs. Living Will &mdash; What&rsquo;s the Difference?</h4></a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="../js/components.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-cta-btn, .nav-mobile-menu a');
+  navLinks.forEach(link => { const href = link.getAttribute('href'); if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('../')) { link.setAttribute('href', '../' + href); } });
+  const logoLink = document.querySelector('.nav-logo'); if (logoLink) logoLink.setAttribute('href', '../index.html');
+  const logoImg = document.querySelector('.nav-logo img'); if (logoImg) logoImg.setAttribute('src', '../images/logo.svg');
+});
+</script>
+</body>
+</html>
