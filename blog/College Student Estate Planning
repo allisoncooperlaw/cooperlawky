@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Going to College? The Documents Every Student Needs Before Move-In Day | Cooper Law</title>
+<meta name="description" content="Before your child moves into the dorm, make sure they have a medical POA, durable POA, and HIPAA release. Here's why these matter more than the shower caddy.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.post-hero { padding: 52px 0 40px; background: var(--warm-white); border-bottom: 1px solid var(--border-light); }
+.post-tag { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); margin-bottom: 12px; display: block; }
+.post-title { font-family: var(--serif); font-size: clamp(26px, 4vw, 42px); font-weight: 500; line-height: 1.25; margin-bottom: 12px; color: var(--dark); max-width: 720px; }
+.post-subtitle { font-size: 16px; color: var(--mid); line-height: 1.7; max-width: 640px; margin-bottom: 20px; }
+.post-meta { font-size: 12px; color: var(--light); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.post-meta span { display: flex; align-items: center; gap: 5px; }
+.post-body { max-width: 720px; margin: 0 auto; padding: 48px 40px; }
+.post-body h2 { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--dark); margin: 36px 0 12px; line-height: 1.3; }
+.post-body h3 { font-family: var(--sans); font-size: 17px; font-weight: 500; color: var(--dark); margin: 28px 0 8px; }
+.post-body p { font-size: 15px; color: var(--mid); line-height: 1.85; margin-bottom: 18px; }
+.post-body strong { color: var(--dark); font-weight: 500; }
+.post-body ul, .post-body ol { margin: 0 0 18px 24px; }
+.post-body li { font-size: 15px; color: var(--mid); line-height: 1.75; margin-bottom: 6px; }
+.post-callout { background: var(--rose-light); border-left: 3px solid var(--rose); border-radius: var(--radius-lg); padding: 18px 22px; margin: 24px 0; }
+.post-callout p { margin: 0; font-size: 14px; }
+.post-callout.green { background: var(--green-light); border-left-color: var(--green); }
+.post-cta { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 32px; margin: 40px 0; text-align: center; }
+.post-cta h3 { font-family: var(--sans); font-size: 18px; margin-bottom: 8px; }
+.post-cta p { font-size: 14px; margin-bottom: 18px; }
+.post-divider { border: none; border-top: 1px solid var(--border-light); margin: 36px 0; }
+.post-author { display: flex; align-items: center; gap: 16px; padding: 24px 0; border-top: 1px solid var(--border-light); }
+.post-author-photo { width: 56px; height: 56px; border-radius: 50%; background: var(--rose-light); overflow: hidden; flex-shrink: 0; }
+.post-author-photo img { width: 100%; height: 100%; object-fit: cover; }
+.post-author-name { font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.post-author-bio { font-size: 12px; color: var(--mid); line-height: 1.6; }
+.related-posts { background: var(--off-white); padding: 48px 40px; border-top: 1px solid var(--border-light); }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.related-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; text-decoration: none; display: block; }
+.related-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.related-card .tag { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 6px; display: block; }
+.related-card h4 { font-family: var(--serif); font-size: 16px; font-weight: 500; color: var(--dark); line-height: 1.35; }
+@media (max-width: 700px) { .post-body { padding: 32px 20px; } .related-grid { grid-template-columns: 1fr; } .related-posts { padding: 36px 20px; } }
+</style>
+</head>
+<body>
+<div id="nav-placeholder" data-base="../"></div>
+
+<div class="post-hero">
+  <div class="container">
+    <span class="post-tag">Parents &amp; Young Adults</span>
+    <h1 class="post-title">Going to College? The Documents Every Student Needs Before Move-In Day</h1>
+    <p class="post-subtitle">You&rsquo;ve bought the mini fridge and the shower caddy. But have you signed the documents that let you help your child in an emergency?</p>
+    <div class="post-meta">
+      <span>&#9998; Allison Cooper, JD, CPA, CFP&reg;</span>
+      <span>&#128197; April 2026</span>
+      <span>&#128336; 5 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-body">
+
+  <p>Every year, millions of parents drive their kids to college, unload boxes, set up the dorm room, and drive home feeling a mix of pride and anxiety. They&rsquo;ve thought about meal plans, textbooks, and whether their kid has enough warm socks. Very few have thought about what happens if their child ends up in the hospital that first semester.</p>
+
+  <p>Here&rsquo;s the thing most parents don&rsquo;t realize: once your child turns 18, you have no legal right to make medical or financial decisions on their behalf. And when they move hours away for college, the distance makes that legal gap even more dangerous.</p>
+
+  <h2>The college move-in legal checklist</h2>
+
+  <p>Before your student moves in, these four documents should be signed, witnessed, and stored where you can access them. Think of this as part of the move-in preparation &mdash; right alongside setting up the bank account and getting on the health insurance.</p>
+
+  <h3>1. Medical power of attorney</h3>
+
+  <p>This names you as the person authorized to make medical decisions for your child if they&rsquo;re unable to make them. Without it, a hospital 300 miles away has no legal obligation to let you authorize treatment &mdash; even if you&rsquo;re on the phone begging them.</p>
+
+  <h3>2. HIPAA authorization</h3>
+
+  <p>This is the document that lets doctors and hospitals share your child&rsquo;s medical information with you. HIPAA is strict &mdash; without this release, the hospital can&rsquo;t tell you your child&rsquo;s diagnosis, treatment plan, or even that they&rsquo;ve been admitted. A phone call from your child&rsquo;s roommate telling you &ldquo;something happened&rdquo; followed by a hospital that says &ldquo;we can&rsquo;t tell you anything&rdquo; is a parent&rsquo;s worst nightmare. This document prevents it.</p>
+
+  <h3>3. Durable power of attorney (financial)</h3>
+
+  <p>If your child is incapacitated, someone needs to manage their financial affairs &mdash; pay the rent on their apartment, handle their car insurance, deal with their student loans, manage their bank account. Without a durable POA, you can&rsquo;t do any of this, even if you&rsquo;re the one who set up the account in the first place.</p>
+
+  <h3>4. Living will / advance directive</h3>
+
+  <p>Nobody wants to think about end-of-life decisions for their college freshman. But this document means that if the unthinkable happens, your family has clear guidance instead of impossible guesswork. It&rsquo;s a ten-minute conversation and a signature. It&rsquo;s worth it.</p>
+
+  <div class="post-callout">
+    <p><strong>The real-world version of this:</strong> Your daughter is a sophomore at UK. She&rsquo;s in a car accident on I-64. She&rsquo;s taken to a hospital in Lexington. You live in Louisville. You call the hospital. They confirm she&rsquo;s there but can&rsquo;t tell you her condition. You drive an hour in a panic. You arrive at the ER. The doctor needs authorization for surgery. You say yes. The hospital asks for your legal authority. You have none. A medical POA and HIPAA release &mdash; two documents &mdash; would have eliminated every one of those obstacles.</p>
+  </div>
+
+  <h2>What about the school&rsquo;s forms?</h2>
+
+  <p>Many colleges ask students to fill out emergency contact forms and basic health forms during orientation. These are <em>not</em> the same as legal documents. A college emergency contact form does not give you legal authority to make medical decisions. It does not satisfy HIPAA. It does not give you access to financial accounts.</p>
+
+  <p>The college&rsquo;s forms are administrative. Your legal documents are <em>legal</em>. You need both, and one does not substitute for the other.</p>
+
+  <h2>Study abroad makes this urgent</h2>
+
+  <p>If your child is studying abroad, these documents go from important to essential. Medical emergencies in foreign countries are complicated enough without adding a legal authority gap on top of it. Make sure the documents are signed before your child leaves the country, and keep digital copies accessible.</p>
+
+  <p>Some study abroad programs require proof of emergency contacts and legal documents as part of the application process. Even if yours doesn&rsquo;t require them, they should be in place.</p>
+
+  <h2>The move-in checklist nobody gives you</h2>
+
+  <p>Here&rsquo;s what the college move-in checklist should really look like:</p>
+
+  <ul>
+    <li>Bedding, towels, school supplies &mdash; yes</li>
+    <li>Laptop, phone charger, headphones &mdash; yes</li>
+    <li>Health insurance card (copy in their wallet + digital) &mdash; yes</li>
+    <li><strong>Medical power of attorney &mdash; signed and filed</strong></li>
+    <li><strong>HIPAA authorization &mdash; signed and filed</strong></li>
+    <li><strong>Durable power of attorney (financial) &mdash; signed and filed</strong></li>
+    <li><strong>Living will &mdash; signed and filed</strong></li>
+    <li>Copy of all documents stored where you can access them remotely</li>
+  </ul>
+
+  <p>The first three items on that list cost a few hundred dollars total. The last five cost $900 and could save your family thousands in emergency legal fees &mdash; and more importantly, could save critical hours or days when time matters most.</p>
+
+  <div class="post-callout green">
+    <p><strong>Cooper Law&rsquo;s Young Adult Protection Plan</strong> is designed specifically for this situation. Simple will + durable POA + living will + medical POA + HIPAA authorization, flat fee of $900 for clients under 25. <a href="../young-adults.html" style="color:var(--green);font-weight:500">Learn more &rarr;</a></p>
+  </div>
+
+  <div class="post-cta">
+    <h3>Move-in day is coming. Are the legal documents ready?</h3>
+    <p>Submit an intake form and mention your child&rsquo;s age for the under-25 rate.</p>
+    <a href="../contact.html" class="btn btn-rose">Request a Consultation</a>
+  </div>
+
+  <hr class="post-divider">
+  <div class="post-author">
+    <div class="post-author-photo"><img src="../images/allison.jpg" alt="Allison Cooper"></div>
+    <div>
+      <div class="post-author-name">Allison Cooper, JD, CPA, CFP&reg;</div>
+      <div class="post-author-bio">Allison Cooper is the founder of Cooper Law, LLC, an estate planning firm based in Louisville, Kentucky. She holds a JD, CPA, and CFP&reg; and is licensed to practice law in Kentucky, Indiana, and Ohio.</div>
+    </div>
+  </div>
+</div>
+
+<div class="related-posts">
+  <div style="max-width:720px;margin:0 auto"><span class="eyebrow">Keep reading</span><h3 style="font-size:20px;margin-bottom:0">More from Cooper Law</h3></div>
+  <div class="related-grid">
+    <a href="child-turned-18.html" class="related-card"><span class="tag">Parents &amp; Young Adults</span><h4>Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost</h4></a>
+    <a href="study-abroad-documents.html" class="related-card"><span class="tag">Parents &amp; Young Adults</span><h4>Study Abroad Checklist: The Legal Documents Your College Student Needs</h4></a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="../js/components.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-cta-btn, .nav-mobile-menu a');
+  navLinks.forEach(link => { const href = link.getAttribute('href'); if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('../')) { link.setAttribute('href', '../' + href); } });
+  const logoLink = document.querySelector('.nav-logo'); if (logoLink) logoLink.setAttribute('href', '../index.html');
+  const logoImg = document.querySelector('.nav-logo img'); if (logoImg) logoImg.setAttribute('src', '../images/logo.svg');
+});
+</script>
+</body>
+</html>
