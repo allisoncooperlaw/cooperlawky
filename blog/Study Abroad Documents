@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Abroad Checklist: The Legal Documents Your College Student Needs | Cooper Law</title>
+<meta name="description" content="Before your child studies abroad, make sure they have a medical POA, durable POA, and HIPAA release. International emergencies without legal documents are a nightmare.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.post-hero { padding: 52px 0 40px; background: var(--warm-white); border-bottom: 1px solid var(--border-light); }
+.post-tag { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); margin-bottom: 12px; display: block; }
+.post-title { font-family: var(--serif); font-size: clamp(26px, 4vw, 42px); font-weight: 500; line-height: 1.25; margin-bottom: 12px; color: var(--dark); max-width: 720px; }
+.post-subtitle { font-size: 16px; color: var(--mid); line-height: 1.7; max-width: 640px; margin-bottom: 20px; }
+.post-meta { font-size: 12px; color: var(--light); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.post-meta span { display: flex; align-items: center; gap: 5px; }
+.post-body { max-width: 720px; margin: 0 auto; padding: 48px 40px; }
+.post-body h2 { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--dark); margin: 36px 0 12px; line-height: 1.3; }
+.post-body h3 { font-family: var(--sans); font-size: 17px; font-weight: 500; color: var(--dark); margin: 28px 0 8px; }
+.post-body p { font-size: 15px; color: var(--mid); line-height: 1.85; margin-bottom: 18px; }
+.post-body strong { color: var(--dark); font-weight: 500; }
+.post-body ul, .post-body ol { margin: 0 0 18px 24px; }
+.post-body li { font-size: 15px; color: var(--mid); line-height: 1.75; margin-bottom: 6px; }
+.post-callout { background: var(--rose-light); border-left: 3px solid var(--rose); border-radius: var(--radius-lg); padding: 18px 22px; margin: 24px 0; }
+.post-callout p { margin: 0; font-size: 14px; }
+.post-callout.green { background: var(--green-light); border-left-color: var(--green); }
+.post-cta { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 32px; margin: 40px 0; text-align: center; }
+.post-cta h3 { font-family: var(--sans); font-size: 18px; margin-bottom: 8px; }
+.post-cta p { font-size: 14px; margin-bottom: 18px; }
+.post-divider { border: none; border-top: 1px solid var(--border-light); margin: 36px 0; }
+.post-author { display: flex; align-items: center; gap: 16px; padding: 24px 0; border-top: 1px solid var(--border-light); }
+.post-author-photo { width: 56px; height: 56px; border-radius: 50%; background: var(--rose-light); overflow: hidden; flex-shrink: 0; }
+.post-author-photo img { width: 100%; height: 100%; object-fit: cover; }
+.post-author-name { font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.post-author-bio { font-size: 12px; color: var(--mid); line-height: 1.6; }
+.related-posts { background: var(--off-white); padding: 48px 40px; border-top: 1px solid var(--border-light); }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.related-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; text-decoration: none; display: block; }
+.related-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.related-card .tag { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 6px; display: block; }
+.related-card h4 { font-family: var(--serif); font-size: 16px; font-weight: 500; color: var(--dark); line-height: 1.35; }
+@media (max-width: 700px) { .post-body { padding: 32px 20px; } .related-grid { grid-template-columns: 1fr; } .related-posts { padding: 36px 20px; } }
+</style>
+</head>
+<body>
+<div id="nav-placeholder" data-base="../"></div>
+
+<div class="post-hero">
+  <div class="container">
+    <span class="post-tag">Parents &amp; Young Adults</span>
+    <h1 class="post-title">Study Abroad Checklist: The Legal Documents Your College Student Needs</h1>
+    <p class="post-subtitle">Your child is about to leave the country for a semester. Do you have the legal documents you&rsquo;d need to help them in an international emergency?</p>
+    <div class="post-meta">
+      <span>&#9998; Allison Cooper, JD, CPA, CFP&reg;</span>
+      <span>&#128197; April 2026</span>
+      <span>&#128336; 5 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-body">
+
+  <p>Study abroad is one of the best experiences a college student can have. It&rsquo;s also one of the moments where the gap between &ldquo;my child is an adult on paper&rdquo; and &ldquo;my child still needs me&rdquo; feels widest. They&rsquo;re 18 or 19 years old, in a foreign country, possibly not fluent in the language &mdash; and if something goes wrong, you&rsquo;re thousands of miles away with no legal authority to help.</p>
+
+  <p>This isn&rsquo;t about being overprotective. It&rsquo;s about being prepared. The legal documents that matter domestically matter even <em>more</em> when your child is overseas.</p>
+
+  <h2>Why international travel raises the stakes</h2>
+
+  <p>Everything that&rsquo;s true about the legal gap at age 18 is amplified when your child is in another country.</p>
+
+  <p><strong>Time zones.</strong> An emergency happens at 3am their time. You find out hours later. Every hour without clear legal authority is an hour where decisions may be delayed or made by someone who doesn&rsquo;t know your child.</p>
+
+  <p><strong>Language barriers.</strong> Navigating a foreign hospital system is hard enough. Trying to explain that you&rsquo;re the parent and you need information about your adult child &mdash; in a language you may not speak &mdash; without legal documentation to back you up? Nearly impossible.</p>
+
+  <p><strong>Distance.</strong> You can&rsquo;t just drive to the hospital. If your child needs you to make decisions or manage their affairs, you&rsquo;re doing it remotely. Legal documents are the only thing that gives you standing to act from 5,000 miles away.</p>
+
+  <p><strong>Different legal systems.</strong> While a U.S. power of attorney may not be directly enforceable in every foreign country, having one demonstrates your child&rsquo;s intent and your relationship. Many foreign hospitals and institutions will honor the spirit of these documents, especially when they&rsquo;re properly executed. Without them, you have nothing to show at all.</p>
+
+  <h2>The study abroad legal checklist</h2>
+
+  <p>These should be signed and filed <em>before</em> your child leaves the country:</p>
+
+  <h3>Medical power of attorney</h3>
+  <p>Names you as the person authorized to make medical decisions. If your child is unconscious in a hospital in Barcelona, this document &mdash; along with a certified copy and ideally a translated version &mdash; is what gives you standing to communicate with their care team.</p>
+
+  <h3>HIPAA authorization</h3>
+  <p>Authorizes U.S.-based healthcare providers to share information with you. This matters if your child is evacuated back to the U.S. for treatment, or if U.S.-based insurance providers need to coordinate with foreign hospitals. It also covers any domestic medical situations before departure or after return.</p>
+
+  <h3>Durable power of attorney (financial)</h3>
+  <p>Gives you authority to manage your child&rsquo;s U.S.-based financial accounts while they&rsquo;re overseas. If their rent is due at their U.S. apartment, their student loan payment hits, or their car insurance lapses &mdash; you can handle it. Without this document, you can&rsquo;t touch their accounts even if you&rsquo;re the one funding them.</p>
+
+  <h3>Living will / advance directive</h3>
+  <p>Documents your child&rsquo;s wishes about end-of-life medical care. In the context of study abroad, this is the document that provides guidance if your child is critically injured and you can&rsquo;t reach the hospital in time to make decisions in person.</p>
+
+  <h3>Simple will</h3>
+  <p>A basic will that directs where your child&rsquo;s assets go. For most college students, this is straightforward &mdash; everything to parents or siblings. But having it in place means there&rsquo;s no legal ambiguity about anything.</p>
+
+  <div class="post-callout">
+    <p><strong>Practical tip:</strong> Make digital copies of every signed document and store them somewhere you can access from anywhere &mdash; a secure cloud folder, an encrypted email to yourself, or a password manager vault. If your child has an emergency abroad at 2am, you need to be able to pull up these documents from your phone, not dig through a filing cabinet.</p>
+  </div>
+
+  <h2>What the study abroad program probably told you</h2>
+
+  <p>Most study abroad programs provide an emergency contact form, require proof of health insurance, and may offer an international health plan. Some programs also provide a pre-departure checklist that mentions legal documents.</p>
+
+  <p>These are good starting points, but they are not substitutes for attorney-prepared legal documents. A college&rsquo;s emergency contact form does not give you medical decision-making authority. A student health insurance card does not authorize you to speak with doctors about your child&rsquo;s care. Only legal documents do that.</p>
+
+  <h2>Additional preparations for international travel</h2>
+
+  <p>Beyond the legal documents, a few other preparations are worth your time:</p>
+
+  <ul>
+    <li><strong>Register with the U.S. embassy.</strong> The State Department&rsquo;s Smart Traveler Enrollment Program (STEP) lets you register your child&rsquo;s travel, which makes it easier for the embassy to contact you in an emergency.</li>
+    <li><strong>Confirm insurance coverage.</strong> Make sure your child&rsquo;s health insurance covers international care, or purchase supplemental travel health insurance. Know the process for filing claims from abroad.</li>
+    <li><strong>Know the local emergency numbers.</strong> 911 doesn&rsquo;t work everywhere. Know the equivalent in your child&rsquo;s host country.</li>
+    <li><strong>Share itineraries.</strong> Know where your child is staying, their program coordinator&rsquo;s contact information, and the nearest U.S. embassy or consulate.</li>
+  </ul>
+
+  <div class="post-callout green">
+    <p><strong>Cooper Law&rsquo;s Young Adult Protection Plan</strong> covers everything on this checklist &mdash; simple will, durable POA, living will, medical POA, and HIPAA authorization &mdash; for a flat fee of $900 for clients under 25. Documents can be prepared remotely and delivered electronically. <a href="../young-adults.html" style="color:var(--green);font-weight:500">Learn more &rarr;</a></p>
+  </div>
+
+  <h2>The timeline</h2>
+
+  <p>Don&rsquo;t leave this until the week before departure. Give yourself at least 2&ndash;3 weeks before your child leaves to get documents prepared, signed, witnessed, and filed. If you&rsquo;re cutting it close, mention the travel date in your intake form &mdash; Cooper Law can accommodate tighter timelines when needed.</p>
+
+  <p>Your child is about to have the experience of a lifetime. Make sure you can help them if they need you &mdash; from any distance.</p>
+
+  <div class="post-cta">
+    <h3>Departure date approaching?</h3>
+    <p>Submit an intake form and mention your child&rsquo;s travel date. We&rsquo;ll make sure the documents are ready before they leave.</p>
+    <a href="../contact.html" class="btn btn-rose">Request a Consultation</a>
+  </div>
+
+  <hr class="post-divider">
+  <div class="post-author">
+    <div class="post-author-photo"><img src="../images/allison.jpg" alt="Allison Cooper"></div>
+    <div>
+      <div class="post-author-name">Allison Cooper, JD, CPA, CFP&reg;</div>
+      <div class="post-author-bio">Allison Cooper is the founder of Cooper Law, LLC, an estate planning firm based in Louisville, Kentucky. She holds a JD, CPA, and CFP&reg; and is licensed to practice law in Kentucky, Indiana, and Ohio.</div>
+    </div>
+  </div>
+</div>
+
+<div class="related-posts">
+  <div style="max-width:720px;margin:0 auto"><span class="eyebrow">Keep reading</span><h3 style="font-size:20px;margin-bottom:0">More from Cooper Law</h3></div>
+  <div class="related-grid">
+    <a href="child-turned-18.html" class="related-card"><span class="tag">Parents &amp; Young Adults</span><h4>Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost</h4></a>
+    <a href="college-estate-planning.html" class="related-card"><span class="tag">Parents &amp; Young Adults</span><h4>Going to College? The Documents Every Student Needs Before Move-In Day</h4></a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="../js/components.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-cta-btn, .nav-mobile-menu a');
+  navLinks.forEach(link => { const href = link.getAttribute('href'); if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('../')) { link.setAttribute('href', '../' + href); } });
+  const logoLink = document.querySelector('.nav-logo'); if (logoLink) logoLink.setAttribute('href', '../index.html');
+  const logoImg = document.querySelector('.nav-logo img'); if (logoImg) logoImg.setAttribute('src', '../images/logo.svg');
+});
+</script>
+</body>
+</html>
