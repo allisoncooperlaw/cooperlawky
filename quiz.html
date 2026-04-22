@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which Estate Plan Is Right for You? | Cooper Law</title>
+<meta name="description" content="Answer a few quick questions to find out which estate planning package fits your situation — with transparent pricing from Cooper Law in KY, IN &amp; OH.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Quiz styles */
+.quiz-wrap { max-width: 640px; margin: 0 auto; }
+.quiz-progress { display: flex; gap: 6px; margin-bottom: 32px; }
+.quiz-progress-dot { height: 4px; flex: 1; border-radius: 2px; background: var(--border); transition: background 0.3s; }
+.quiz-progress-dot.active { background: var(--rose); }
+.quiz-progress-dot.done { background: var(--rose-mid); }
+
+.quiz-question { display: none; animation: quizFadeIn 0.35s ease; }
+.quiz-question.active { display: block; }
+@keyframes quizFadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.quiz-question h2 { font-family: var(--serif); font-size: clamp(22px, 3.5vw, 30px); font-weight: 500; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
+.quiz-question .quiz-sub { font-size: 14px; color: var(--mid); margin-bottom: 24px; line-height: 1.7; }
+
+.quiz-options { display: flex; flex-direction: column; gap: 10px; }
+.quiz-opt { background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 18px 22px; cursor: pointer; transition: all 0.2s; text-align: left; font-family: var(--sans); font-size: 15px; color: var(--dark); line-height: 1.5; display: flex; align-items: flex-start; gap: 14px; }
+.quiz-opt:hover { border-color: var(--rose-mid); background: var(--rose-light); }
+.quiz-opt .quiz-opt-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.quiz-opt .quiz-opt-label { font-weight: 500; }
+.quiz-opt .quiz-opt-desc { font-size: 13px; color: var(--mid); margin-top: 3px; }
+
+.quiz-back { background: none; border: none; color: var(--light); font-size: 13px; cursor: pointer; margin-top: 20px; font-family: var(--sans); padding: 0; }
+.quiz-back:hover { color: var(--mid); }
+
+/* Result card */
+.quiz-result { display: none; animation: quizFadeIn 0.4s ease; }
+.quiz-result.active { display: block; }
+.quiz-result-card { background: #fff; border: 2px solid var(--rose); border-radius: var(--radius-lg); padding: 36px; text-align: center; }
+.quiz-result-card.green { border-color: var(--green); }
+.quiz-result-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; }
+.quiz-result-card.green .quiz-result-eyebrow { color: var(--green); }
+.quiz-result-name { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.quiz-result-price { font-family: var(--serif); font-size: 42px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.quiz-result-fee { font-size: 12px; color: var(--light); font-style: italic; margin-bottom: 20px; }
+.quiz-result-includes { text-align: left; margin: 0 auto 24px; max-width: 420px; }
+.quiz-result-includes li { font-size: 14px; color: var(--mid); padding: 5px 0; border-top: 1px solid var(--border-light); list-style: none; }
+.quiz-result-includes li::before { content: "\2192\00a0"; color: var(--rose); }
+.quiz-result-card.green .quiz-result-includes li::before { color: var(--green); }
+.quiz-result-note { font-size: 13px; color: var(--mid); line-height: 1.7; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light); text-align: left; }
+
+.quiz-alt { margin-top: 24px; padding: 20px; background: var(--warm-white); border-radius: var(--radius-lg); text-align: left; }
+.quiz-alt h4 { font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.quiz-alt p { font-size: 13px; color: var(--mid); line-height: 1.7; margin: 0; }
+.quiz-alt a { color: var(--rose); font-weight: 500; }
+
+.quiz-restart { background: none; border: none; color: var(--light); font-size: 13px; cursor: pointer; margin-top: 20px; font-family: var(--sans); }
+.quiz-restart:hover { color: var(--mid); }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="section alt" style="padding-bottom: 32px;">
+  <div class="container">
+    <span class="eyebrow">Find your plan</span>
+    <h2>Not sure where to start?</h2>
+    <p class="lead">Answer a few quick questions and I&rsquo;ll recommend the right estate planning package for your situation &mdash; with the price up front, no consultation required.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container">
+    <div class="quiz-wrap">
+
+      <!-- Progress bar -->
+      <div class="quiz-progress" id="quizProgress">
+        <div class="quiz-progress-dot active"></div>
+        <div class="quiz-progress-dot"></div>
+        <div class="quiz-progress-dot"></div>
+        <div class="quiz-progress-dot"></div>
+        <div class="quiz-progress-dot"></div>
+      </div>
+
+      <!-- Q1: What brings you here? -->
+      <div class="quiz-question active" id="q1">
+        <h2>What brings you here today?</h2>
+        <p class="quiz-sub">Pick the one that fits best. You can always go back.</p>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="goResult('young-adult')">
+            <span class="quiz-opt-icon">&#127891;</span>
+            <div><div class="quiz-opt-label">My child is turning 18 or heading to college</div>
+            <div class="quiz-opt-desc">POA, medical directive, and HIPAA so you can still help if something happens.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goResult('priority')">
+            <span class="quiz-opt-icon">&#9889;</span>
+            <div><div class="quiz-opt-label">I need documents fast</div>
+            <div class="quiz-opt-desc">Surgery coming up, travel, diagnosis, or just can&rsquo;t wait weeks.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goResult('standalone')">
+            <span class="quiz-opt-icon">&#128196;</span>
+            <div><div class="quiz-opt-label">I just need one or two specific documents</div>
+            <div class="quiz-opt-desc">A standalone will, POA, living will, or medical POA &mdash; not a full plan.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goTo('q2')">
+            <span class="quiz-opt-icon">&#128220;</span>
+            <div><div class="quiz-opt-label">I want to set up a complete estate plan</div>
+            <div class="quiz-opt-desc">Will, trust, POA, directives &mdash; the whole thing, done right.</div></div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Q2: Probate -->
+      <div class="quiz-question" id="q2">
+        <h2>Do you want your estate to skip probate?</h2>
+        <p class="quiz-sub">Probate is the court process that distributes your assets after death. It&rsquo;s public, takes 6&ndash;24 months, and typically costs 2&ndash;4% of the estate. A trust avoids it entirely.</p>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="goResult('will-based')">
+            <span class="quiz-opt-icon">&#128221;</span>
+            <div><div class="quiz-opt-label">I&rsquo;m okay with probate &mdash; just give me a solid will</div>
+            <div class="quiz-opt-desc">Will + all ancillary documents. Simple, effective, less expensive.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goTo('q3')">
+            <span class="quiz-opt-icon">&#127968;</span>
+            <div><div class="quiz-opt-label">Yes &mdash; I want a trust to avoid probate</div>
+            <div class="quiz-opt-desc">Revocable trust + pour-over will + all ancillary documents.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goTo('q3')">
+            <span class="quiz-opt-icon">&#10067;</span>
+            <div><div class="quiz-opt-label">I&rsquo;m not sure yet</div>
+            <div class="quiz-opt-desc">That&rsquo;s okay &mdash; let&rsquo;s keep going and I&rsquo;ll explain the options.</div></div>
+          </button>
+        </div>
+        <button class="quiz-back" onclick="goTo('q1')">&larr; Back</button>
+      </div>
+
+      <!-- Q3: Individual or couple -->
+      <div class="quiz-question" id="q3">
+        <h2>Are you planning as an individual or a couple?</h2>
+        <p class="quiz-sub">Couples share some documents but each person needs their own will, POA, and directives.</p>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="goResult('family-single')">
+            <span class="quiz-opt-icon">&#128100;</span>
+            <div><div class="quiz-opt-label">Individual</div>
+            <div class="quiz-opt-desc">Planning for myself only.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goTo('q4')">
+            <span class="quiz-opt-icon">&#128101;</span>
+            <div><div class="quiz-opt-label">Couple</div>
+            <div class="quiz-opt-desc">Planning together with my spouse or partner.</div></div>
+          </button>
+        </div>
+        <button class="quiz-back" onclick="goTo('q2')">&larr; Back</button>
+      </div>
+
+      <!-- Q4: Trust structure for couples -->
+      <div class="quiz-question" id="q4">
+        <h2>How do you and your spouse hold assets?</h2>
+        <p class="quiz-sub">This determines which trust structure makes sense. Don&rsquo;t worry if you&rsquo;re not sure &mdash; pick your best guess and we&rsquo;ll confirm during the planning process.</p>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="goResult('couple-joint')">
+            <span class="quiz-opt-icon">&#129309;</span>
+            <div><div class="quiz-opt-label">Mostly shared</div>
+            <div class="quiz-opt-desc">Joint bank accounts, shared property, same beneficiaries. A joint trust works well.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goResult('couple-individual')">
+            <span class="quiz-opt-icon">&#128257;</span>
+            <div><div class="quiz-opt-label">Mostly separate</div>
+            <div class="quiz-opt-desc">Blended family, different beneficiaries, or significant separate property. Individual trusts are better.</div></div>
+          </button>
+          <button class="quiz-opt" onclick="goResult('couple-both')">
+            <span class="quiz-opt-icon">&#127775;</span>
+            <div><div class="quiz-opt-label">It&rsquo;s complicated</div>
+            <div class="quiz-opt-desc">Some shared, some separate, or you&rsquo;re just not sure. Maximum flexibility.</div></div>
+          </button>
+        </div>
+        <button class="quiz-back" onclick="goTo('q3')">&larr; Back</button>
+      </div>
+
+      <!-- Q5: Asset protection (shown after family-single or couple results if they want more) -->
+      <!-- Handled inline in results -->
+
+      <!-- RESULTS -->
+
+      <div class="quiz-result" id="result-young-adult">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Young Adult Protection Plan</div>
+          <div class="quiz-result-price">$900</div>
+          <div class="quiz-result-fee">flat fee &middot; clients under 25</div>
+          <ul class="quiz-result-includes">
+            <li>Simple last will &amp; testament</li>
+            <li>Durable power of attorney (financial)</li>
+            <li>Living will / advance directive</li>
+            <li>Medical POA / healthcare surrogate</li>
+            <li>HIPAA authorization</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">If your child&rsquo;s home state is KY, IN, or OH, we can prepare their documents regardless of where they attend school. <a href="young-adults.html" style="color:var(--rose)">Learn more &rarr;</a></div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-priority">
+        <div class="quiz-result-card green">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Priority Planning</div>
+          <div class="quiz-result-price">$2,500</div>
+          <div class="quiz-result-fee">flat fee &middot; 48&ndash;72 hour turnaround</div>
+          <ul class="quiz-result-includes">
+            <li>Last will &amp; testament</li>
+            <li>Durable power of attorney</li>
+            <li>Living will / advance directive</li>
+            <li>Medical POA / healthcare surrogate</li>
+            <li>Electronic delivery default</li>
+          </ul>
+          <a href="priority.html" class="btn btn-green">Request Priority Planning</a>
+          <div class="quiz-result-note">Subject to attorney availability. Please state your deadline clearly in your intake form. <a href="priority.html" style="color:var(--green)">Full details &rarr;</a></div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-standalone">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Standalone Documents</div>
+          <div class="quiz-result-price">$400&ndash;$600</div>
+          <div class="quiz-result-fee">per document &middot; flat fee</div>
+          <ul class="quiz-result-includes">
+            <li>Simple will &mdash; $600</li>
+            <li>Single POA, living will, or medical POA &mdash; $400 each</li>
+            <li>Ancillary bundle (all 3, no will) &mdash; $1,000</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">Rush available: +$400 for 48&ndash;72 hour turnaround. <a href="services.html" style="color:var(--rose)">See all services &rarr;</a></div>
+        </div>
+        <div class="quiz-alt">
+          <h4>Worth considering</h4>
+          <p>A will-based plan ($1,500) includes the will <em>plus</em> all three ancillary documents &mdash; only $500 more than buying the will and bundle separately. Most clients find it&rsquo;s the better value. <a href="services.html">Compare packages &rarr;</a></p>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-will-based">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Will-Based Plan</div>
+          <div class="quiz-result-price">$1,500</div>
+          <div class="quiz-result-fee">flat fee &middot; individual</div>
+          <ul class="quiz-result-includes">
+            <li>Last will &amp; testament</li>
+            <li>Durable power of attorney</li>
+            <li>Living will / advance directive</li>
+            <li>Medical POA / healthcare surrogate</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">This plan goes through probate. If you own a home or want to keep your affairs private, a <a href="services.html" style="color:var(--rose)">trust-based Family Protection Plan</a> ($3,000) avoids probate entirely.</div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-family-single">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Family Protection &mdash; Individual</div>
+          <div class="quiz-result-price">$3,000</div>
+          <div class="quiz-result-fee">flat fee &middot; avoids probate</div>
+          <ul class="quiz-result-includes">
+            <li>Pour-over will</li>
+            <li>Revocable living trust</li>
+            <li>Durable power of attorney</li>
+            <li>Living will / advance directive</li>
+            <li>Medical POA / healthcare surrogate</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">Need asset protection beyond probate avoidance? An irrevocable trust add-on (+$1,500) provides creditor protection and long-term care shielding. <a href="services.html" style="color:var(--rose)">See all options &rarr;</a></div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-couple-joint">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Family Protection &mdash; Couple, Joint Trust</div>
+          <div class="quiz-result-price">$3,800</div>
+          <div class="quiz-result-fee">flat fee &middot; avoids probate</div>
+          <ul class="quiz-result-includes">
+            <li>One joint revocable trust</li>
+            <li>Two pour-over wills</li>
+            <li>POAs for both spouses</li>
+            <li>Living wills for both</li>
+            <li>Medical POAs for both</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">This is the most popular option for couples with shared assets. If your situation is more complex, we&rsquo;ll discuss whether individual trusts might be a better fit during the planning process.</div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-couple-individual">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Family Protection &mdash; Couple, Individual Trusts</div>
+          <div class="quiz-result-price">$4,000</div>
+          <div class="quiz-result-fee">flat fee &middot; avoids probate</div>
+          <ul class="quiz-result-includes">
+            <li>Two separate revocable trusts</li>
+            <li>Two pour-over wills</li>
+            <li>POAs for both spouses</li>
+            <li>Living wills for both</li>
+            <li>Medical POAs for both</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">Best for blended families, different beneficiary wishes, or significant separate property. <a href="services.html" style="color:var(--rose)">See all couple options &rarr;</a></div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+      <div class="quiz-result" id="result-couple-both">
+        <div class="quiz-result-card">
+          <div class="quiz-result-eyebrow">Recommended for you</div>
+          <div class="quiz-result-name">Family Protection &mdash; Couple, Joint + Individual</div>
+          <div class="quiz-result-price">$4,800</div>
+          <div class="quiz-result-fee">flat fee &middot; maximum flexibility</div>
+          <ul class="quiz-result-includes">
+            <li>One joint revocable trust</li>
+            <li>Two individual revocable trusts</li>
+            <li>Two pour-over wills</li>
+            <li>POAs for both spouses</li>
+            <li>Directives for both</li>
+          </ul>
+          <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+          <div class="quiz-result-note">This is the most comprehensive option for couples. It gives you shared planning where it makes sense and individual control where it doesn&rsquo;t. <a href="services.html" style="color:var(--rose)">See all options &rarr;</a></div>
+        </div>
+        <button class="quiz-restart" onclick="restart()">&larr; Start over</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Still not sure?</h2>
+  <p>Submit an intake form and tell me about your situation. I&rsquo;ll let you know what I recommend and what it costs &mdash; before you commit to anything.</p>
+  <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script>
+const questions = ['q1','q2','q3','q4'];
+let history = ['q1'];
+
+function goTo(id) {
+  // Hide all
+  document.querySelectorAll('.quiz-question, .quiz-result').forEach(el => {
+    el.classList.remove('active');
+  });
+  // Show target
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.remove('active');
+    // Force reflow for animation
+    void target.offsetWidth;
+    target.classList.add('active');
+  }
+  // Track history
+  if (history[history.length - 1] !== id) history.push(id);
+  updateProgress(id);
+}
+
+function goResult(resultId) {
+  document.querySelectorAll('.quiz-question, .quiz-result').forEach(el => {
+    el.classList.remove('active');
+  });
+  const result = document.getElementById('result-' + resultId);
+  if (result) {
+    void result.offsetWidth;
+    result.classList.add('active');
+  }
+  // Fill all progress dots
+  document.querySelectorAll('.quiz-progress-dot').forEach(dot => {
+    dot.classList.add('done');
+    dot.classList.remove('active');
+  });
+}
+
+function updateProgress(currentQ) {
+  const idx = questions.indexOf(currentQ);
+  document.querySelectorAll('.quiz-progress-dot').forEach((dot, i) => {
+    dot.classList.remove('active', 'done');
+    if (i < idx) dot.classList.add('done');
+    if (i === idx) dot.classList.add('active');
+  });
+}
+
+function restart() {
+  history = ['q1'];
+  document.querySelectorAll('.quiz-question, .quiz-result').forEach(el => {
+    el.classList.remove('active');
+  });
+  document.getElementById('q1').classList.add('active');
+  document.querySelectorAll('.quiz-progress-dot').forEach((dot, i) => {
+    dot.classList.remove('active', 'done');
+    if (i === 0) dot.classList.add('active');
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
