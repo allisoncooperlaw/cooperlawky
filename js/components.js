@@ -7,6 +7,7 @@ const NAV_LOGO_SVG = `<img src="images/logo.svg" alt="Cooper Law" style="height:
 
 function getPageName() {
   const path = window.location.pathname;
+  if (path.includes('young-adults')) return 'young-adults';
   if (path.includes('estate-planning')) return 'estate-planning';
   if (path.includes('services')) return 'services';
   if (path.includes('priority')) return 'priority';
@@ -23,6 +24,7 @@ function renderNav() {
     { href: 'estate-planning.html', label: 'Estate Planning', key: 'estate-planning' },
     { href: 'services.html', label: 'Services + Pricing', key: 'services' },
     { href: 'priority.html', label: 'Priority Planning', key: 'priority' },
+    { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
     { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
