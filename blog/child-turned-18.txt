@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost (Legally) | Cooper Law</title>
+<meta name="description" content="When your child turns 18, you lose the legal right to make their medical decisions, access their finances, or talk to their doctor. Here's what Kentucky, Indiana, and Ohio parents need to know.">
+<link rel="canonical" href="https://www.cooperestateplanning.com/blog/child-turned-18.html">
+<meta property="og:title" content="Your Child Turned 18 — Here's What You Just Lost (Legally) | Cooper Law">
+<meta property="og:description" content="When your child turns 18, you lose the legal right to make their medical decisions, access their finances, or talk to their doctor.">
+<meta property="og:url" content="https://www.cooperestateplanning.com/blog/child-turned-18.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.cooperestateplanning.com/images/allison.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.post-hero { padding: 52px 0 40px; background: var(--warm-white); border-bottom: 1px solid var(--border-light); }
+.post-title { font-family: var(--serif); font-size: 36px; font-weight: 500; color: var(--dark); line-height: 1.25; max-width: 720px; margin: 0 auto 16px; }
+.post-meta { font-size: 13px; color: var(--light); max-width: 720px; margin: 0 auto; }
+.post-body { max-width: 720px; margin: 0 auto; padding: 48px 20px 40px; font-size: 15px; line-height: 1.85; color: var(--mid); }
+.post-body h2 { font-family: var(--serif); font-size: 24px; font-weight: 500; color: var(--dark); margin: 40px 0 16px; }
+.post-body h3 { font-family: var(--sans); font-size: 17px; font-weight: 600; color: var(--dark); margin: 32px 0 12px; }
+.post-body p { margin-bottom: 18px; }
+.post-body a { color: var(--rose); }
+.post-body .callout { margin: 28px 0; }
+.post-cta { background: var(--rose-light); border-radius: var(--radius-lg); padding: 32px; margin: 40px 0; text-align: center; }
+.post-cta h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 10px; color: var(--dark); }
+.post-cta p { font-size: 14px; color: var(--mid); margin-bottom: 16px; }
+.post-divider { border: none; border-top: 1px solid var(--border-light); margin: 40px 0; }
+.post-author { display: flex; gap: 16px; align-items: center; }
+.post-author-photo { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+.post-author-photo img { width: 100%; height: 100%; object-fit: cover; }
+.post-author-name { font-weight: 500; font-size: 14px; color: var(--dark); }
+.post-author-bio { font-size: 12px; color: var(--light); margin-top: 4px; line-height: 1.6; }
+.related-posts { padding: 48px 20px; max-width: 720px; margin: 0 auto; }
+.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.related-card { padding: 20px; background: var(--off-white); border-radius: var(--radius-lg); text-decoration: none; }
+.related-card:hover { background: var(--rose-light); }
+.related-card .tag { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); display: block; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--serif); font-size: 16px; color: var(--dark); line-height: 1.35; }
+@media (max-width: 600px) { .post-title { font-size: 28px; } .related-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="post-hero">
+  <div class="container">
+    <p class="post-meta">Young Adults &middot; April 2026</p>
+    <h1 class="post-title">Your Child Turned 18 &mdash; Here&rsquo;s What You Just Lost (Legally)</h1>
+    <p class="post-meta">By Allison Cooper, JD, CPA, CFP&reg;</p>
+  </div>
+</section>
+
+<div class="post-body">
+
+  <p>Your kid just turned 18. You threw a party, maybe cried a little, and then went back to normal life. But legally, nothing about your relationship with your child is normal anymore.</p>
+
+  <p>The moment they turned 18, you stopped being their legal decision-maker. Not gradually. Not eventually. Instantly. And most parents don&rsquo;t realize what that actually means until something goes wrong.</p>
+
+  <h2>What changes at 18 &mdash; and why it matters</h2>
+
+  <p>Here&rsquo;s what parents in Kentucky, Indiana, and Ohio need to understand: once your child is a legal adult, you have no automatic right to make medical decisions for them, access their financial accounts, talk to their doctor, view their grades, or manage their affairs in any capacity. Being their parent doesn&rsquo;t override this. Being on their health insurance doesn&rsquo;t override this. Paying their tuition doesn&rsquo;t override this.</p>
+
+  <p>The only thing that restores your ability to step in is a set of legal documents that your child signs voluntarily, naming you as their agent.</p>
+
+  <h2>The scenario that catches every parent off guard</h2>
+
+  <p>Your 19-year-old is away at college &mdash; maybe at UK, maybe at IU, maybe at Ohio State. They&rsquo;re in a car accident. They&rsquo;re unconscious. The hospital calls you because you&rsquo;re listed as an emergency contact.</p>
+
+  <p>You rush to the hospital. And then you hear the words no parent expects to hear: &ldquo;We can&rsquo;t share any information with you. We can&rsquo;t let you make decisions. Your child is a legal adult.&rdquo;</p>
+
+  <p>This is not hypothetical. This happens. HIPAA privacy laws are absolute. Without a signed medical power of attorney and HIPAA authorization on file, the hospital is legally prohibited from telling you anything &mdash; even if you&rsquo;re standing right there, even if you&rsquo;re paying the bills, even if you carried this person for nine months.</p>
+
+  <h2>The documents your 18-year-old needs</h2>
+
+  <p>The fix is straightforward and it doesn&rsquo;t require complex planning. Your young adult needs four documents:</p>
+
+  <h3>Medical power of attorney</h3>
+  <p>This lets you make healthcare decisions if your child can&rsquo;t. Kentucky, Indiana, and Ohio each handle this slightly differently &mdash; Kentucky combines it with the living will into a single form, Ohio has a separate healthcare POA, and Indiana uses a healthcare representative designation. An attorney licensed in all three states can make sure it&rsquo;s done correctly for wherever your child lives or goes to school.</p>
+
+  <h3>HIPAA authorization</h3>
+  <p>This is what allows doctors and hospitals to actually share your child&rsquo;s medical information with you. Without it, the medical POA is harder to use in practice because providers may not even confirm whether your child has been admitted.</p>
+
+  <h3>Durable power of attorney (financial)</h3>
+  <p>This allows you to manage your child&rsquo;s financial affairs if they can&rsquo;t &mdash; paying rent, accessing bank accounts, handling insurance claims, signing a lease. For most young adults, a &ldquo;springing&rdquo; POA that only activates if they&rsquo;re incapacitated is the right choice. It respects their independence while giving you a safety net.</p>
+
+  <h3>Simple will</h3>
+  <p>Your 18-year-old probably doesn&rsquo;t have significant assets. But they might have a car, a bank account, maybe a small investment or a UTMA account that just transferred into their name. A simple will makes sure those things go where they should &mdash; and avoids the need for probate on even a small estate.</p>
+
+  <h2>When to do this</h2>
+
+  <p>The best time is before your child leaves for college. The second best time is right now. Good timing includes before they leave for study abroad (this one is critical &mdash; overseas medical emergencies without documents are exponentially more complicated), after high school graduation as a milestone gift, or when they get their first apartment or first real job.</p>
+
+  <p>These documents are also a great conversation starter about responsibility and adulthood. You&rsquo;re not being overprotective. You&rsquo;re teaching them how adults plan ahead.</p>
+
+  <div class="callout">
+    <h4>What about FERPA?</h4>
+    <p>FERPA governs access to educational records &mdash; grades, disciplinary records, enrollment status. It&rsquo;s separate from HIPAA and POA. Your child can sign a FERPA waiver directly with their college to give you access. This isn&rsquo;t something that requires an attorney &mdash; the school&rsquo;s registrar handles it. But it&rsquo;s worth doing at the same time you set up the legal documents so everything is handled at once.</p>
+  </div>
+
+  <h2>How Cooper Law handles this</h2>
+
+  <p>I created a <a href="../young-adults.html">Young Adult Protection Plan</a> specifically for this situation. It includes a simple will, durable POA, living will, medical POA, and HIPAA authorization &mdash; everything your new adult needs, at a flat fee that reflects the straightforward nature of the work.</p>
+
+  <p>Everything is done remotely. Your child doesn&rsquo;t need to be in Louisville. Documents are delivered electronically with annotated signing instructions that show exactly what to sign, where to sign, and what needs to be notarized. I work with families across Kentucky, Indiana, and Ohio.</p>
+
+  <p>If you&rsquo;d prefer to bundle your child&rsquo;s documents with your own estate plan, we can do that too. Many parents realize they need to update their own plan at the same time &mdash; especially if their will still names guardians for &ldquo;minor children&rdquo; who are now adults.</p>
+
+  <div class="post-cta">
+    <h3>Your child is 18. Are you legally prepared?</h3>
+    <p>Submit a short intake form and mention your child&rsquo;s age. I&rsquo;ll get back to you as soon as I can.</p>
+    <a href="../contact.html" class="btn btn-rose">Request a Consultation</a>
+    <p style="font-size:12px;color:var(--light);margin-top:12px;margin-bottom:0">Or learn more about the <a href="../young-adults.html" style="color:var(--rose)">Young Adult Protection Plan &rarr;</a></p>
+  </div>
+
+  <hr class="post-divider">
+
+  <div class="post-author">
+    <div class="post-author-photo"><img src="../images/allison.jpg" alt="Allison Cooper"></div>
+    <div>
+      <div class="post-author-name">Allison Cooper, JD, CPA, CFP&reg;</div>
+      <div class="post-author-bio">Allison Cooper is the founder of Cooper Law, LLC, an estate planning firm based in Louisville, Kentucky. She holds a JD, CPA, and CFP&reg; and is licensed to practice law in Kentucky, Indiana, and Ohio.</div>
+    </div>
+  </div>
+</div>
+
+<div class="related-posts">
+  <div style="max-width:720px;margin:0 auto"><span class="eyebrow">Keep reading</span><h3 style="font-size:20px;margin-bottom:0">More from Cooper Law</h3></div>
+  <div class="related-grid">
+    <a href="choosing-a-guardian.html" class="related-card"><span class="tag">Parents</span><h4>How to Choose a Guardian for Your Children</h4></a>
+    <a href="poa-vs-living-will.html" class="related-card"><span class="tag">Documents</span><h4>Power of Attorney vs. Living Will &mdash; What&rsquo;s the Difference?</h4></a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="../js/components.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-cta-btn, .nav-mobile-menu a');
+  navLinks.forEach(link => { const href = link.getAttribute('href'); if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('../')) { link.setAttribute('href', '../' + href); } });
+  const logoLink = document.querySelector('.nav-logo'); if (logoLink) logoLink.setAttribute('href', '../index.html');
+  const logoImg = document.querySelector('.nav-logo img'); if (logoImg) logoImg.setAttribute('src', '../images/logo.svg');
+});
+</script>
+</body>
+</html>
