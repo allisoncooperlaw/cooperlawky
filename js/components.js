@@ -25,7 +25,6 @@ function renderNav() {
     { href: 'services.html', label: 'Services + Pricing', key: 'services' },
     { href: 'priority.html', label: 'Priority Planning', key: 'priority' },
     { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
-    { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
     { href: 'contact.html', label: 'Contact', key: 'contact' },
