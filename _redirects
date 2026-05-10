@@ -9,3 +9,9 @@ https://emergencywillsandtrusts.com/* https://cooperestateplanning.com/emergency
 https://www.emergencywillsandtrusts.com/* https://cooperestateplanning.com/emergency.html 301!
 https://estateplanning911.com/* https://cooperestateplanning.com/emergency.html 301!
 https://www.estateplanning911.com/* https://cooperestateplanning.com/emergency.html 301!
+
+# Other domains redirect to primary domain
+https://cooperlawky.com/* https://cooperestateplanning.com/:splat 301!
+https://www.cooperlawky.com/* https://cooperestateplanning.com/:splat 301!
+https://cooperestateplans.com/* https://cooperestateplanning.com/:splat 301!
+https://www.cooperestateplans.com/* https://cooperestateplanning.com/:splat 301!
