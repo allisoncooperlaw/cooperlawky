@@ -3,188 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estate Planning Services &amp; Flat Fees | Cooper Law</title>
-<meta name="description" content="Transparent flat-fee estate planning in KY, IN &amp; OH. Wills, revocable and irrevocable trusts, powers of attorney, and deed transfers. No hourly billing surprises.">
+<title>Estate Planning Services &amp; Pricing | Cooper Law | KY, IN &amp; OH</title>
+<meta name="description" content="Transparent, flat-fee estate planning from a JD, CPA, and CFP®. Wills, trusts, powers of attorney — pricing posted because you deserve to know before you commit. KY, IN &amp; OH.">
 <link rel="canonical" href="https://www.cooperestateplanning.com/services.html">
-<meta property="og:title" content="Estate Planning Services &amp; Flat Fees | Cooper Law">
-<meta property="og:description" content="Transparent flat-fee estate planning in KY, IN &amp; OH. Wills, revocable and irrevocable trusts, powers of attorney, and deed transfers. No hourly billing surprises.">
+<meta property="og:title" content="Estate Planning Services &amp; Pricing | Cooper Law">
+<meta property="og:description" content="Transparent, flat-fee estate planning from a JD, CPA, and CFP®. Pricing posted because you deserve to know before you commit.">
 <meta property="og:url" content="https://www.cooperestateplanning.com/services.html">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.cooperestateplanning.com/images/allison.jpg">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
 <style>
-.price-table-4 .price-table-header,
-.price-table-4 .price-table-row { grid-template-columns: 2.4fr 1fr 1.8fr 1fr; }
-.price-table-3 .price-table-header,
-.price-table-3 .price-table-row { grid-template-columns: 2.2fr 1fr 1.8fr; }
+/* Services page card layout */
+.svc-philosophy { max-width: 720px; margin: 0 auto; }
+.svc-philosophy h2 { font-family: var(--serif); font-size: clamp(24px, 3.5vw, 34px); font-weight: 500; color: var(--dark); line-height: 1.3; margin-bottom: 16px; }
+.svc-philosophy p { font-size: 15px; color: var(--mid); line-height: 1.85; margin-bottom: 16px; }
+.svc-philosophy .highlight { font-weight: 500; color: var(--dark); }
+
+.svc-section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; display: block; }
+.svc-section-label.pink { color: var(--rose); }
+.svc-section-label.green { color: var(--green); }
+.svc-section-label.orange { color: #E86A2C; }
+
+.svc-section-title { font-family: var(--serif); font-size: clamp(22px, 3vw, 30px); font-weight: 500; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
+
+.svc-section-intro { font-size: 15px; color: var(--mid); line-height: 1.7; margin-bottom: 24px; max-width: 640px; }
+
+.svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 16px; }
+.svc-grid-single { grid-template-columns: 1fr; max-width: 420px; }
+
+.svc-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 28px 24px; position: relative; }
+.svc-card-featured { border: 2px solid var(--rose); }
+.svc-card-emergency { border: 2px solid #E86A2C; background: #FFF4EE; }
+
+.svc-badge { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
+.svc-badge-popular { background: var(--rose-light); color: var(--rose); }
+.svc-badge-emergency { background: #FAECE7; color: #993C1D; }
+
+.svc-card-name { font-family: var(--serif); font-size: 20px; font-weight: 500; color: var(--dark); margin-bottom: 4px; line-height: 1.3; }
+.svc-card-who { font-size: 13px; color: var(--mid); line-height: 1.7; margin-bottom: 14px; }
+
+.svc-card-price { font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.svc-card-timeline { font-size: 12px; color: var(--light); margin-bottom: 2px; }
+.svc-card-priority { font-size: 12px; color: var(--rose); font-weight: 500; }
+.svc-card-priority.orange { color: #E86A2C; }
+
+.svc-card-includes { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border-light); }
+.svc-card-includes-label { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-bottom: 8px; }
+.svc-card-item { font-size: 13px; color: var(--mid); padding: 4px 0; display: flex; align-items: flex-start; gap: 8px; line-height: 1.6; }
+.svc-card-item::before { content: "\2192"; color: var(--rose); flex-shrink: 0; font-weight: 500; }
+.svc-card-emergency .svc-card-item::before { color: #E86A2C; }
+.svc-card-note { font-size: 12px; color: var(--light); font-style: italic; margin-top: 10px; line-height: 1.6; }
+
+/* Pricing details expand */
+.svc-card-details { font-size: 12px; color: var(--mid); line-height: 1.6; margin-top: 10px; padding: 10px 14px; background: var(--warm-white); border-radius: var(--radius); }
+
+/* Add-on grid */
+.addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+.addon-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; }
+.addon-card h4 { font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.addon-card .addon-price { font-size: 20px; font-weight: 500; color: var(--dark); margin-bottom: 8px; font-family: var(--sans); }
+.addon-card p { font-size: 12px; color: var(--mid); line-height: 1.6; }
+
+/* Delivery grid */
+.delivery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+.delivery-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; text-align: center; }
+.delivery-card .delivery-icon { font-size: 28px; margin-bottom: 10px; }
+.delivery-card h4 { font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.delivery-card p { font-size: 12px; color: var(--mid); line-height: 1.6; text-align: left; }
+
+/* Philosophy callout boxes */
+.philosophy-box { background: var(--warm-white); border-radius: var(--radius-lg); padding: 24px 28px; margin-bottom: 16px; }
+.philosophy-box h3 { font-family: var(--sans); font-size: 16px; font-weight: 500; color: var(--dark); margin-bottom: 8px; }
+.philosophy-box p { font-size: 14px; color: var(--mid); line-height: 1.8; margin-bottom: 0; }
+
+/* Why different section */
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+.why-card { background: var(--warm-white); border-radius: var(--radius-lg); padding: 20px; }
+.why-card h4 { font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.why-card p { font-size: 13px; color: var(--mid); line-height: 1.7; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .svc-grid { grid-template-columns: 1fr; }
+  .addon-grid { grid-template-columns: 1fr; }
+  .delivery-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 22px; }
+}
 </style>
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
+<!-- WHY OUR PRICES ARE POSTED -->
 <section class="section alt">
   <div class="container">
-    <span class="eyebrow">Services &amp; Fees</span>
-    <h1>Transparent, flat-fee estate planning</h1>
-    <div class="callout" style="margin-bottom:14px">
-      <p>Attorney fees for estate planning are often more comparable to online services than people expect &mdash; especially when you factor in the cost of fixing documents that weren&rsquo;t set up correctly in the first place. Every Cooper Law engagement includes document drafting and a written summary of recommended next steps. Asset titling, deed preparation, beneficiary designation changes, and coordination with other advisors are separate engagements &mdash; see add-on services below.</p>
+    <div class="svc-philosophy">
+      <span class="svc-section-label pink">Why our prices are on the website</span>
+      <h2>You shouldn&rsquo;t have to wonder what estate planning costs.</h2>
+      <p>Most attorneys don&rsquo;t publish their prices. We do &mdash; because you deserve to know what you&rsquo;re paying <em>before</em> you commit to anything. No free consultations where you walk out with a vague estimate and a follow-up call. No hourly billing surprises. Just honest, flat-fee pricing for every service we offer.</p>
+      <p>We keep our prices accessible because <span class="highlight">we believe everyone should be able to protect the people they love.</span> Estate planning isn&rsquo;t a luxury &mdash; it&rsquo;s how you make sure your family isn&rsquo;t left scrambling when something happens. The cost of planning is always less than the cost of not planning.</p>
+      <p><span class="highlight">Payment plans are available.</span> Cost should never be the reason your family goes unprotected. Financing options are available upon request &mdash; ask during your scoping call.</p>
     </div>
-    <div class="callout green">
-      <p><strong style="color:var(--dark)">On timelines:</strong> Estimates depend on client responsiveness, document complexity, and current caseload. The clock starts when Cooper Law has received all completed intake materials &mdash; not from the date of initial inquiry. All timelines are subject to attorney availability. Clients who return intake materials promptly typically complete their plan at the shorter end of the range.</p>
+  </div>
+</section>
+
+<!-- A NOTE ON ONLINE SERVICES -->
+<section class="section">
+  <div class="container">
+    <div class="svc-philosophy">
+      <h2>A note on online estate planning services</h2>
+      <p>You may have seen websites offering wills and trusts for a few hundred dollars. Those services use generic templates and automated questionnaires &mdash; they do not provide legal advice, they cannot tailor documents to your state&rsquo;s specific requirements, and they cannot coordinate your estate plan with your tax situation or financial goals.</p>
+      <p>In my experience reviewing documents from online providers, I have seen documents that did not comply with Kentucky&rsquo;s witness and execution requirements, trusts that clients believed were funded when they were not, and powers of attorney drafted so narrowly that the agent could not actually do what the client intended. These are not hypothetical risks &mdash; they are problems I have seen real families face.</p>
+      <p>An estate plan is only as good as the attorney behind it. <span class="highlight">When you work with Cooper Law, you work directly with an attorney who holds a JD, CPA, and CFP&reg;</span> &mdash; which means your plan accounts for the legal, tax, and financial picture that an online template simply cannot see.</p>
     </div>
-    <div class="callout" style="margin-top:14px;border-left-color:var(--rose)">
-      <h4>Why our pricing is on the website</h4>
-      <p>Most estate planning firms don&rsquo;t publish their fees. They offer a free consultation and then tell you the price once you&rsquo;re in the room. Cooper Law does the opposite: <strong>our pricing is on the website so you know exactly what to expect before you reach out.</strong> No surprises, no pressure, no wasted time &mdash; yours or mine.</p>
-    </div>
-    <p style="font-size:14px;margin-top:16px;color:var(--mid)">Not sure which package is right for you? <a href="quiz.html" style="color:var(--rose);font-weight:500">Take the 2-Minute Quiz &rarr;</a></p>
   </div>
 </section>
 
 <!-- STANDALONE DOCUMENTS -->
-<section class="section">
+<section class="section alt">
   <div class="container">
-    <span class="eyebrow">Pipeline 1</span>
-    <h2>Standalone &amp; Emergency Documents</h2>
-    <p class="lead">Individual documents for clients who need something specific, fast, or who don&rsquo;t yet need a full plan.</p>
+    <span class="svc-section-label pink">Individual documents</span>
+    <div class="svc-section-title">I just need one or two things</div>
+    <p class="svc-section-intro">You know what you need, or you&rsquo;re not ready for a full plan yet. These are individual documents drafted correctly for your state.</p>
 
-    <div class="price-table price-table-4">
-      <div class="price-table-header">
-        <div class="price-cell">Service</div>
-        <div class="price-cell">Price</div>
-        <div class="price-cell">Includes</div>
-        <div class="price-cell">Timeline / Rush</div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-card-name">Just one document</div>
+        <div class="svc-card-who">A single power of attorney, living will, or medical POA &mdash; drafted for Kentucky, Indiana, or Ohio and delivered with signing instructions.</div>
+        <div class="svc-card-price">$500</div>
+        <div class="svc-card-timeline">1&ndash;2 weeks</div>
+        <div class="svc-card-priority">Priority: 48&ndash;72 hours (+$400)</div>
       </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Simple will &mdash; standalone</h4>
-          <div class="price-note">Single individual &middot; straightforward distribution &middot; no trust</div>
+
+      <div class="svc-card">
+        <div class="svc-card-name">The essential three</div>
+        <div class="svc-card-who">The documents that make sure someone you trust can step in <em>if you&rsquo;re unable to</em> &mdash; for your finances, your medical care, and your end-of-life wishes. These only take effect when you need them to.</div>
+        <div class="svc-card-price">$1,200</div>
+        <div class="svc-card-timeline">1&ndash;2 weeks</div>
+        <div class="svc-card-priority">Priority: 48&ndash;72 hours (+$400)</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Durable power of attorney &mdash; designates someone to handle your finances if you&rsquo;re unable to</div>
+          <div class="svc-card-item">Living will / advance directive &mdash; documents your wishes for end-of-life medical care</div>
+          <div class="svc-card-item">Medical POA / healthcare surrogate &mdash; designates someone to make medical decisions if you can&rsquo;t speak for yourself</div>
+          <div class="svc-card-item">HIPAA authorization &mdash; allows your designated people to access your medical information</div>
         </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$600</span><div class="price-note">flat fee</div></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Last will &amp; testament for one individual with straightforward beneficiary designations. One round of revisions included. Does not include ancillary documents (POA, living will, medical POA) &mdash; see bundle or will-based plan below.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;font-weight:500;color:var(--dark);margin-bottom:4px">1&ndash;2 weeks</p><p class="rush">+$400 rush (48&ndash;72 hrs)</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Single ancillary document</h4>
-          <div class="price-note">POA, living will, or medical POA</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$500</span><div class="price-note">per document</div></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">One document + signing instructions. Electronic or mailed delivery.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;font-weight:500;color:var(--dark);margin-bottom:4px">1&ndash;2 weeks</p><p class="rush">+$350 rush (48&ndash;72 hrs)</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Ancillary bundle</h4>
-          <div class="price-note">All three critical docs &mdash; no will</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$1,200</span><div class="price-note">flat fee</div></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Durable POA + living will / advance directive + medical POA / healthcare surrogate.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;font-weight:500;color:var(--dark);margin-bottom:4px">1&ndash;2 weeks</p><p class="rush">+$350 rush (48&ndash;72 hrs)</p></div>
-      </div>
-      <div class="price-table-row green">
-        <div class="price-cell">
-          <h4>Priority Planning <span class="pill green" style="font-size:10px;margin-left:6px">Rush &middot; Flat fee</span></h4>
-          <div class="price-note">Will + ancillary docs &middot; no trust &middot; total cost &mdash; not an add-on</div>
-          <div class="price-note" style="margin-top:4px;font-style:italic">Same documents as the will-based plan, designed to accommodate a tight turnaround where standard planning takes a few weeks.</div>
-        </div>
-        <div class="price-cell"><span class="amount" style="color:var(--green)">$2,500</span><div class="price-note">total flat fee</div></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Last will &amp; testament + durable POA + living will + medical POA. Electronic delivery default.</p></div>
-        <div class="price-cell"><p style="font-size:12px;font-weight:500;color:var(--green);margin-bottom:4px">48&ndash;72 hours</p><p class="not-avail">N/A &mdash; already rush</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Young Adult Protection Plan <span class="pill" style="font-size:10px;margin-left:6px">Under 25</span></h4>
-          <div class="price-note">Will + all ancillary docs + HIPAA release &middot; for clients under 25</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$1,000</span><div class="price-note">flat fee</div></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Simple last will &amp; testament + durable POA + living will + medical POA + HIPAA authorization.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;font-weight:500;color:var(--dark);margin-bottom:4px">1&ndash;2 weeks</p><p class="rush">+$400 rush (48&ndash;72 hrs)</p></div>
       </div>
     </div>
-    <p style="font-size:12px;color:var(--light);font-style:italic">Priority Planning is a flat fee &mdash; this is the total cost, not an add-on to another package. Subject to attorney availability &mdash; please state your deadline clearly in your intake form. <a href="priority.html" style="color:var(--rose)">Learn more &rarr;</a> &bull; <a href="young-adults.html" style="color:var(--rose)">Young Adult Protection Plan &rarr;</a></p>
   </div>
 </section>
 
 <!-- COMPREHENSIVE PLANS -->
+<section class="section">
+  <div class="container">
+    <span class="svc-section-label pink">Comprehensive estate planning</span>
+    <div class="svc-section-title">I need a complete plan</div>
+    <p class="svc-section-intro">Full estate planning with legal, tax, and financial coordination &mdash; because all three need to work together.</p>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-card-name">Will-based plan</div>
+        <div class="svc-card-who">Your wishes are documented and someone is designated to carry them out. Best for straightforward situations where a trust isn&rsquo;t necessary.</div>
+        <div class="svc-card-price">$2,000</div>
+        <div class="svc-card-timeline">4&ndash;6 weeks</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Last will and testament</div>
+          <div class="svc-card-item">Durable power of attorney</div>
+          <div class="svc-card-item">Living will / advance directive</div>
+          <div class="svc-card-item">Medical POA / healthcare surrogate</div>
+          <div class="svc-card-item">HIPAA authorization</div>
+        </div>
+        <div class="svc-card-note">Good to know: with a will-based plan, your estate goes through probate &mdash; a public court process that can take 6&ndash;24 months and cost your family $10,000&ndash;$20,000 on a $500K estate. Most clients upgrade to a trust-based plan after we talk. Need this fast? Ask about <a href="emergency.html" style="color:#E86A2C;font-weight:500">Estate Planning 911</a>.</div>
+      </div>
+
+      <div class="svc-card svc-card-featured">
+        <span class="svc-badge svc-badge-popular">Most popular</span>
+        <div class="svc-card-name">Family protection plan</div>
+        <div class="svc-card-who">A trust-based plan that gives your family the best chance to avoid probate, keeps your affairs private, and coordinates your legal plan with your tax and financial picture.</div>
+        <div class="svc-card-price">from $3,800</div>
+        <div class="svc-card-timeline">4&ndash;6 weeks</div>
+        <div class="svc-card-priority">Priority: 5 business days (from +$750)</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Revocable living trust &mdash; holds your assets and lets your family bypass probate</div>
+          <div class="svc-card-item">Pour-over will &mdash; catches anything not already in the trust</div>
+          <div class="svc-card-item">Certificate of trust &mdash; a summary you can show banks and institutions without revealing the full trust</div>
+          <div class="svc-card-item">Trust funding instructions &mdash; step-by-step guide for retitling assets into your trust</div>
+          <div class="svc-card-item">All essential documents (POA, living will, medical POA, HIPAA)</div>
+          <div class="svc-card-item">Tax-aware planning &mdash; Allison&rsquo;s CPA and CFP&reg; background means your plan accounts for tax implications most attorneys miss</div>
+        </div>
+        <div class="svc-card-details">
+          <strong style="color:var(--dark)">Pricing by situation:</strong><br>
+          Individual &mdash; $3,800 (priority +$750)<br>
+          Couple, joint trust &mdash; $4,800 (priority +$1,000) &bull; best for couples with shared goals<br>
+          Couple, separate trusts &mdash; $5,200 (priority +$1,000) &bull; best for blended families or separate assets<br>
+          Couple, joint + individual trusts &mdash; $6,200 (priority +$1,250) &bull; maximum flexibility<br>
+          <em style="color:var(--light)">Not sure which one? Allison will help you figure it out during your scoping call.</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-card-name">Full estate plan</div>
+        <div class="svc-card-who">For more complex situations &mdash; significant assets, tax concerns, asset protection needs, or Medicaid planning. Includes an irrevocable trust as part of a coordinated strategy.</div>
+        <div class="svc-card-price">from $6,000</div>
+        <div class="svc-card-timeline">6&ndash;8 weeks &bull; Priority not available due to complexity</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Everything in the Family Protection plan</div>
+          <div class="svc-card-item">Irrevocable trust &mdash; for asset protection, Medicaid planning, or tax strategy</div>
+          <div class="svc-card-item">Tax-integrated strategy using Allison&rsquo;s CPA and CFP&reg; credentials</div>
+          <div class="svc-card-item">Certificate of trust and funding instructions for all trusts</div>
+        </div>
+        <div class="svc-card-note">Individual ($6,000) or couple ($7,500). Trust structure determined during your scoping call.</div>
+      </div>
+
+      <div class="svc-card svc-card-emergency">
+        <span class="svc-badge svc-badge-emergency">48&ndash;72 hours</span>
+        <div class="svc-card-name">Estate Planning 911</div>
+        <div class="svc-card-who">Surgery next week. Health crisis. Parent in the hospital. You need documents now &mdash; not in six weeks.</div>
+        <div class="svc-card-price">from $3,500</div>
+        <div class="svc-card-timeline" style="color:#E86A2C;font-weight:500">48&ndash;72 hours</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">Two options</div>
+          <div class="svc-card-item">Will-based 911 &mdash; $3,500 &bull; will + all essential documents + HIPAA</div>
+          <div class="svc-card-item">Trust-based 911 &mdash; $5,000 (recommended) &bull; revocable trust + pour-over will + certificate of trust + funding instructions + all essential documents + HIPAA</div>
+        </div>
+        <div class="svc-card-note">Louisville area: Allison comes to you at hospitals, nursing facilities, rehab centers, and professional offices. House calls are not generally available. Remote clients: phone and video with electronic delivery and step-by-step signing and execution instructions.</div>
+        <a href="emergency.html" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:500;color:#E86A2C">Learn more about Estate Planning 911 &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YOUNG ADULTS -->
 <section class="section alt">
   <div class="container">
-    <span class="eyebrow">Pipeline 2</span>
-    <h2>Comprehensive Estate Planning</h2>
-    <p class="lead">Full estate planning engagements with legal, tax, and financial coordination. These are your core packages.</p>
+    <span class="svc-section-label pink">Young adults</span>
+    <div class="svc-section-title">Your child just turned 18</div>
+    <p class="svc-section-intro">The day they turn 18, you lose the legal ability to make medical or financial decisions for them &mdash; even in an emergency &mdash; unless the right documents are in place.</p>
 
-    <div class="price-table price-table-4">
-      <div class="price-table-header">
-        <div class="price-cell">Package</div>
-        <div class="price-cell">Price</div>
-        <div class="price-cell">Includes</div>
-        <div class="price-cell">Timeline / Rush</div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Will-based plan &mdash; single</h4>
-          <div class="price-note">No trust &middot; assets pass through probate &middot; most clients upgrade after consultation</div>
+    <div class="svc-grid svc-grid-single">
+      <div class="svc-card">
+        <div class="svc-card-name">Young adult protection plan</div>
+        <div class="svc-card-who">Designed for clients under 25. Gives parents the legal authority to step in for their adult child if something happens &mdash; and gives the young adult peace of mind that someone they trust is designated.</div>
+        <div class="svc-card-price">$1,000</div>
+        <div class="svc-card-timeline">1&ndash;2 weeks</div>
+        <div class="svc-card-priority">Priority: 48&ndash;72 hours (+$400)</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Simple last will and testament</div>
+          <div class="svc-card-item">Durable power of attorney</div>
+          <div class="svc-card-item">Living will / advance directive</div>
+          <div class="svc-card-item">Medical POA / healthcare surrogate</div>
+          <div class="svc-card-item">HIPAA authorization &mdash; so parents can still talk to their child&rsquo;s doctors</div>
         </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$1,800</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Last will &amp; testament + durable POA + living will + medical POA.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">3&ndash;4 weeks</p><p class="not-avail">Need it faster? See <a href="priority.html" style="color:var(--rose)">Priority Planning</a></p></div>
-      </div>
-      <div class="price-table-row featured">
-        <div class="price-cell">
-          <h4>Family Protection &mdash; single</h4>
-          <span class="pill" style="margin-top:6px;display:inline-block">Most popular &mdash; individual</span>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$3,200</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Pour-over will + revocable living trust + durable POA + living will + medical POA.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">4&ndash;6 weeks</p><p class="rush">+$1,000 rush</p></div>
-      </div>
-      <div class="price-table-row featured">
-        <div class="price-cell">
-          <h4>Family Protection &mdash; couple, joint trust</h4>
-          <span class="pill" style="margin-top:6px;display:inline-block">Most popular &mdash; couples</span>
-          <div class="price-note" style="margin-top:4px">Best for couples with straightforward shared assets</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$4,000</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">One joint revocable trust + two pour-over wills + POAs for both + directives for both.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">4&ndash;6 weeks</p><p class="rush">+$1,250 rush</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Family Protection &mdash; couple, individual trusts</h4>
-          <div class="price-note">Best for blended families, different beneficiary wishes, or significant separate assets</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$4,500</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Two separate revocable trusts + two pour-over wills + POAs for both + directives for both.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">4&ndash;6 weeks</p><p class="rush">+$1,250 rush</p></div>
-      </div>
-      <div class="price-table-row featured">
-        <div class="price-cell">
-          <h4>Family Protection &mdash; couple, joint + individual</h4>
-          <span class="pill" style="margin-top:6px;display:inline-block">Most comprehensive &mdash; couples</span>
-          <div class="price-note" style="margin-top:4px">One joint trust + two individual trusts &middot; maximum flexibility</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$5,200</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Joint revocable trust + two individual revocable trusts + two pour-over wills + POAs + directives for both.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">5&ndash;7 weeks</p><p class="rush">+$1,500 rush</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Full Estate Plan &mdash; single</h4>
-          <div class="price-note">Includes irrevocable trust + tax strategy</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$5,500</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Everything in Family Protection single + irrevocable trust + tax-integrated strategy. Asset transfer coordination is a separate engagement.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">6&ndash;8 weeks</p><p class="not-avail">Rush not available</p></div>
-      </div>
-      <div class="price-table-row">
-        <div class="price-cell">
-          <h4>Full Estate Plan &mdash; couple</h4>
-          <div class="price-note">Trust structure determined at consultation</div>
-        </div>
-        <div class="price-cell" data-label="Price"><span class="amount">$6,800</span></div>
-        <div class="price-cell" data-label="Includes"><p class="includes">Everything in Family Protection couple + irrevocable trust + tax-integrated strategy. Asset transfer coordination is a separate engagement.</p></div>
-        <div class="price-cell" data-label="Timeline"><p style="font-size:12px;margin-bottom:4px">6&ndash;8 weeks</p><p class="not-avail">Rush not available</p></div>
+        <div class="svc-card-note">Priced so that cost isn&rsquo;t the reason families put this off. <a href="young-adults.html" style="color:var(--rose);font-weight:500">Learn more &rarr;</a></div>
       </div>
     </div>
   </div>
@@ -193,75 +270,113 @@
 <!-- ADD-ONS -->
 <section class="section">
   <div class="container">
-    <span class="eyebrow">Add-on Services</span>
-    <h2>Additional services</h2>
-    <div class="grid-3" style="margin-top:24px">
-      <div class="card">
+    <span class="svc-section-label pink">Add-on services</span>
+    <div class="svc-section-title">Additional services</div>
+
+    <div class="addon-grid">
+      <div class="addon-card">
         <h4>Irrevocable trust add-on</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">+$2,000</p>
-        <p>Add to any Family Protection plan. Single becomes $5,200 &middot; joint couple $6,000 &middot; individual couple $6,500.</p>
+        <div class="addon-price">+$2,000</div>
+        <p>Add to any Family Protection plan. For asset protection, Medicaid planning, or tax strategy. Includes certificate of trust and funding instructions.</p>
       </div>
-      <div class="card">
+      <div class="addon-card">
         <h4>Standalone irrevocable trust</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">from $3,500</p>
-        <p>Client has existing base plan elsewhere. Simple irrevocable from $3,500 &middot; complex (Medicaid, ILIT, asset protection) up to $6,500. Not available as rush.</p>
+        <div class="addon-price">from $3,500</div>
+        <p>For clients with an existing base plan from another attorney. Simple irrevocable from $3,500. Complex structures (Medicaid, ILIT, asset protection) quoted at consultation.</p>
       </div>
-      <div class="card">
+      <div class="addon-card">
         <h4>Quitclaim deed transfer</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">$500 / deed</p>
-        <p>Fund your trust correctly. Most KY, IN, and OH counties. Preparation, filing, and confirmation included.</p>
+        <div class="addon-price">$500 / deed</div>
+        <p>Transfer real property into your trust. Most KY, IN, and OH counties. Preparation, filing, and confirmation included.</p>
       </div>
-      <div class="card">
-        <h4>Trust funding consultation</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">$450 flat</p>
-        <p>Scoped review only: are your assets properly titled into your existing trust? Written recommendations included. Does <em>not</em> include full document review.</p>
+      <div class="addon-card">
+        <h4>Will / trust update</h4>
+        <div class="addon-price">$350</div>
+        <p>Update a will or trust originally drafted by Cooper Law. New beneficiary, marriage, divorce, new child, etc. For documents drafted by another attorney, see consultation.</p>
       </div>
-      <div class="card">
-        <h4>Document review &mdash; outside attorney</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">$350/hr &middot; 1hr min</p>
-        <p>Review of documents drafted by another attorney. Hourly &mdash; scope varies. Minimum one hour ($350) billed at engagement. Not a flat-fee service.</p>
-      </div>
-      <div class="card">
-        <h4>Will update &mdash; existing Cooper Law clients</h4>
-        <p style="font-size:22px;font-weight:500;color:var(--dark);margin:6px 0 8px;font-family:var(--sans)">$300 flat</p>
-        <p>Need to update a will originally drafted by Cooper Law? Life changes &mdash; new beneficiary, marriage, divorce, new child &mdash; your will should change with it. Includes re-drafting and new signing instructions. Cooper Law clients only.</p>
+      <div class="addon-card">
+        <h4>Consultation</h4>
+        <div class="addon-price">$350/hr</div>
+        <p>General estate planning consultation, document review of another attorney&rsquo;s work, trust funding review, or second opinion. One-hour minimum. Credited toward your engagement if you proceed within 30 days.</p>
       </div>
     </div>
-    <p style="font-size:12px;color:var(--light);font-style:italic;margin-top:12px">Need to expedite an existing comprehensive package? Contact Allison directly to discuss availability.</p>
+    <p style="font-size:12px;color:var(--light);font-style:italic;margin-top:12px">All prices are flat fees unless otherwise noted. Every engagement includes document drafting and a written summary of recommended next steps. Asset titling, deed preparation, and coordination with other advisors are separate engagements.</p>
   </div>
 </section>
 
 <!-- DELIVERY -->
 <section class="section alt">
   <div class="container">
-    <span class="eyebrow">Document Delivery</span>
-    <h2>Your choice on every service</h2>
-    <div class="grid-3" style="margin-top:24px">
-      <div class="card">
-        <div class="card-icon">&#128231;</div>
+    <span class="svc-section-label pink">Document delivery</span>
+    <div class="svc-section-title">Your choice on every service</div>
+
+    <div class="delivery-grid">
+      <div class="delivery-card">
+        <div class="delivery-icon">&#128231;</div>
         <h4>Electronic delivery</h4>
-        <p>Secure PDF with annotated signing instructions. Callout boxes show exactly what to sign, witness, and notarize &mdash; and where. Print at home and execute. Fast and convenient for most clients.</p>
+        <p>Secure PDF with annotated signing instructions. Callout boxes show exactly what to sign, witness, and notarize. Print at home and execute.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">&#128236;</div>
+      <div class="delivery-card">
+        <div class="delivery-icon">&#128236;</div>
         <h4>Mailed signing kit</h4>
-        <p>Printed documents mailed with tabbed signing instructions and signing stickers. Best for clients who prefer physical documents. Standard shipping included. Allow 3&ndash;5 additional days for delivery.</p>
-        <p style="font-size:11px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">Cooper Law&rsquo;s obligation is fulfilled upon delivery of completed documents to the postal carrier. Delivery timelines for mailed kits are subject to carrier conditions outside of Cooper Law&rsquo;s control. Clients with time-sensitive deadlines are strongly encouraged to choose electronic delivery.</p>
+        <p>Printed documents mailed with tabbed signing instructions and signing stickers. Standard shipping included. Allow 3&ndash;5 additional days.</p>
+        <p style="font-size:10px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">Cooper Law&rsquo;s obligation is fulfilled upon delivery to the postal carrier. Clients with time-sensitive deadlines are strongly encouraged to choose electronic delivery.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">&#129309;</div>
+      <div class="delivery-card">
+        <div class="delivery-icon">&#129309;</div>
         <h4>In-person signing</h4>
-        <p>Louisville-area clients are welcome to schedule an in-person signing at the Cooper Law office. For clients who are hospitalized or unable to travel, Allison is available to visit local Louisville-area hospitals by arrangement.</p>
-        <p style="font-size:11px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">In-person signings are available by appointment and subject to scheduling availability. Hospital visits are limited to the Louisville area. Please mention your preference in your intake form.</p>
+        <p>Louisville-area clients are welcome to schedule an in-person signing at the Cooper Law office. For hospitalized clients or clients in nursing facilities, Allison is available on-site by arrangement. House calls are not generally available.</p>
+        <p style="font-size:10px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">In-person signings are by appointment and subject to scheduling. Hospital and facility visits are limited to the Louisville area. Please mention your preference in your intake form.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- WHY DIFFERENT -->
+<section class="section">
+  <div class="container">
+    <span class="svc-section-label pink">Why Cooper Law</span>
+    <div class="svc-section-title">What makes this different</div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h4>Triple-credential perspective</h4>
+        <p>Allison holds a JD, CPA, and CFP&reg; &mdash; legal, tax, and financial planning coordinated in a single engagement, not three separate professionals.</p>
+      </div>
+      <div class="why-card">
+        <h4>Transparent flat fees</h4>
+        <p>Every price is published. No hourly billing surprises, no hidden costs. You know exactly what you&rsquo;ll pay before we start.</p>
+      </div>
+      <div class="why-card">
+        <h4>Three-state coverage</h4>
+        <p>Licensed in Kentucky, Indiana, and Ohio. Ideal for families with property or family across state lines.</p>
+      </div>
+      <div class="why-card">
+        <h4>Payment plans available</h4>
+        <p>Protecting your family shouldn&rsquo;t depend on having the full fee available today. Financing options available upon request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINES -->
+<section class="section alt">
+  <div class="container">
+    <div class="svc-philosophy">
+      <h2>A note on timelines</h2>
+      <p>Standard timelines listed above are estimates that depend on client responsiveness, document complexity, and current caseload. The clock starts when Cooper Law has received all completed intake materials &mdash; not from the date of initial inquiry.</p>
+      <p><strong style="color:var(--dark)">Priority Planning</strong> is available on select comprehensive packages. Priority engagements are completed within 5 business days of receiving all intake information and are subject to attorney availability. Priority is not available on Full Estate Plans due to the complexity of irrevocable trust structures.</p>
+      <p><strong style="color:#E86A2C">Estate Planning 911</strong> is a separate emergency service with a 48&ndash;72 hour turnaround. <a href="emergency.html" style="color:#E86A2C;font-weight:500">Learn more &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
 <div class="cta-strip">
-  <h2>Ready to get started?</h2>
+  <h2>Ready to protect the people you love?</h2>
   <p>Submit a short intake form and I&rsquo;ll get back to you as soon as I can.</p>
   <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
+  <p style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:12px">Payment plans available &bull; Licensed in KY, IN &amp; OH</p>
 </div>
 
 <div id="footer-placeholder"></div>

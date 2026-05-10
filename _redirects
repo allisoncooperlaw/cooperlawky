@@ -1,7 +1,11 @@
-# Emergency/911 domains redirect to Priority Planning page
-https://willsandtrusts911.com/* https://cooperestateplanning.com/priority.html 301!
-https://www.willsandtrusts911.com/* https://cooperestateplanning.com/priority.html 301!
-https://emergencywillsandtrusts.com/* https://cooperestateplanning.com/priority.html 301!
-https://www.emergencywillsandtrusts.com/* https://cooperestateplanning.com/priority.html 301!
-https://estateplanning911.com/* https://cooperestateplanning.com/priority.html 301!
-https://www.estateplanning911.com/* https://cooperestateplanning.com/priority.html 301!
+# Old priority.html redirects to new emergency page
+/priority.html /emergency.html 301!
+/priority /emergency.html 301!
+
+# Emergency/911 domains redirect to Emergency Estate Planning page
+https://willsandtrusts911.com/* https://cooperestateplanning.com/emergency.html 301!
+https://www.willsandtrusts911.com/* https://cooperestateplanning.com/emergency.html 301!
+https://emergencywillsandtrusts.com/* https://cooperestateplanning.com/emergency.html 301!
+https://www.emergencywillsandtrusts.com/* https://cooperestateplanning.com/emergency.html 301!
+https://estateplanning911.com/* https://cooperestateplanning.com/emergency.html 301!
+https://www.estateplanning911.com/* https://cooperestateplanning.com/emergency.html 301!
