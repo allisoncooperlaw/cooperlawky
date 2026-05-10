@@ -1,0 +1,157 @@
+/* =============================================
+   COOPER LAW — PALETTE UPDATE (May 2026)
+   
+   HOW TO USE: 
+   Open your css/style.css file in Notepad.
+   Find the :root { section at the very top.
+   Replace the color variable values with the ones below.
+   Then paste the FORM STYLING section at the bottom of style.css.
+   
+   FIND AND REPLACE GUIDE:
+   In style.css, do Ctrl+H (Find and Replace) for each:
+   
+   Old rose color → New signature pink:
+   Find:    #C06070     Replace with: #F95EA7
+   Find:    #c06070     Replace with: #F95EA7
+   
+   Old dark color → New Cooper navy:
+   Find:    #2C2C2C     Replace with: #1B2A4A
+   Find:    #2c2c2c     Replace with: #1B2A4A
+   
+   Old rose-light → New pink light:
+   Find:    #F5EEEC     Replace with: #FFF0F7
+   (or whatever your --rose-light value is)
+   
+   Old warm-white → Keep or update:
+   Keep:   #FDF8F6  or change to #F7F5F3
+   
+   Keep --green as #0F6E56 (no change needed)
+   Keep --mid, --light, --border values as-is
+   
+   After the find-and-replace, paste everything 
+   below the "FORM STYLING" line at the bottom 
+   of your style.css file.
+   ============================================= */
+
+
+/* =============================================
+   FORM STYLING — paste at bottom of style.css
+   ============================================= */
+
+/* Form layout */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 6px;
+  font-family: var(--sans);
+}
+
+/* Input styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: var(--sans);
+  color: var(--dark);
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(249, 94, 167, 0.12);
+}
+
+/* Emergency form focus uses orange */
+.emg-form-section .form-group input:focus,
+.emg-form-section .form-group select:focus,
+.emg-form-section .form-group textarea:focus {
+  border-color: #E86A2C;
+  box-shadow: 0 0 0 3px rgba(232, 106, 44, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--light);
+  font-style: italic;
+}
+
+/* Select dropdown arrow */
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7B8D' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+/* Submit button - standard */
+.form-submit {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--sans);
+  color: #fff;
+  background: var(--rose);
+  border: 2px solid var(--rose);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.form-submit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Emergency submit button override */
+.emg-form-section .form-submit {
+  background: #E86A2C;
+  border-color: #E86A2C;
+}
+
+/* Responsive form */
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,7 @@
 /* =============================================
    COOPER LAW — SHARED STYLES
-   cooperlawky.com
+   cooperestateplanning.com
+   Updated May 2026 — new brand palette
    ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
@@ -10,7 +11,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
-  color: #2D2D2D;
+  color: #1B2A4A;
   background: #fff;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -20,20 +21,20 @@ a { color: inherit; text-decoration: none; }
 
 /* ---- VARIABLES ---- */
 :root {
-  --rose: #C06070;
-  --rose-light: #FBEAEE;
-  --rose-mid: #E8B0BC;
-  --rose-dark: #A04050;
+  --rose: #F95EA7;
+  --rose-light: #FFF0F7;
+  --rose-mid: #FCB5D4;
+  --rose-dark: #D44080;
   --green: #0F6E56;
   --green-light: #E1F5EE;
   --green-mid: #9FE1CB;
-  --warm-white: #FDF8F6;
+  --warm-white: #F7F5F3;
   --off-white: #F7F4F2;
-  --dark: #2D2D2D;
-  --mid: #666;
-  --light: #999;
-  --border: #E8E4E1;
-  --border-light: #F0ECE9;
+  --dark: #1B2A4A;
+  --mid: #4A5568;
+  --light: #6B7B8D;
+  --border: #E2DED9;
+  --border-light: #EDEAE6;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
   --radius: 10px;
@@ -114,7 +115,8 @@ p:last-child { margin-bottom: 0; }
   padding: 20px 24px; margin: 16px 0;
 }
 .callout.green { border-left-color: var(--green); background: var(--green-light); }
-.callout.amber { border-left-color: #E09000; background: #FEF8E8; }.callout h4 { margin-bottom: 8px; font-family: var(--sans); font-size: 14px; }
+.callout.amber { border-left-color: #E09000; background: #FEF8E8; }
+.callout h4 { margin-bottom: 8px; font-family: var(--sans); font-size: 14px; }
 .callout p { font-size: 13px; line-height: 1.75; }
 
 /* ---- NAVIGATION ---- */
@@ -191,8 +193,8 @@ p:last-child { margin-bottom: 0; }
 .trust-list { list-style: none; margin: 12px 0; }
 .trust-list li { font-size: 13px; color: var(--mid); padding: 5px 0; border-top: 1px solid var(--border-light); line-height: 1.5; }
 .trust-list li:first-child { border-top: none; }
-.rev .trust-list li::before { content: "✓ "; color: var(--green); font-weight: 500; }
-.irr .trust-list li::before { content: "✓ "; color: var(--rose); font-weight: 500; }
+.rev .trust-list li::before { content: "\2713  "; color: var(--green); font-weight: 500; }
+.irr .trust-list li::before { content: "\2713  "; color: var(--rose); font-weight: 500; }
 .trust-note { font-size: 12px; background: var(--off-white); border-radius: 8px; padding: 10px 13px; color: var(--mid); line-height: 1.6; margin-top: 12px; }
 
 /* ---- PRICING TABLE ---- */
@@ -214,15 +216,40 @@ p:last-child { margin-bottom: 0; }
 /* ---- FORMS ---- */
 .form-wrap { max-width: 560px; }
 .form-group { margin-bottom: 16px; }
-.form-group label { display: block; font-size: 12px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
+.form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--dark); margin-bottom: 6px; }
 .form-group .hint { font-size: 11px; color: var(--light); font-weight: 400; margin-left: 4px; }
-.form-control {
-  width: 100%; padding: 10px 14px; font-size: 14px; font-family: var(--sans);
+.form-control,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 12px 16px; font-size: 15px; font-family: var(--sans);
   border: 1.5px solid var(--border); border-radius: 8px; background: #fff;
-  color: var(--dark); transition: border-color 0.15s; outline: none;
+  color: var(--dark); transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+  -webkit-appearance: none; appearance: none; box-sizing: border-box;
 }
-.form-control:focus { border-color: var(--rose); }
-textarea.form-control { resize: vertical; min-height: 100px; }
+.form-control:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(249, 94, 167, 0.12);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--light);
+  font-style: italic;
+}
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7B8D' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+textarea.form-control,
+.form-group textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .radio-group { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
 .radio-group label {
@@ -234,12 +261,27 @@ textarea.form-control { resize: vertical; min-height: 100px; }
 .radio-group input[type="radio"] { display: none; }
 .radio-group input[type="radio"]:checked + span,
 .radio-group label:has(input:checked) { border-color: var(--rose); background: var(--rose-light); color: var(--rose-dark); }
-.form-submit { width: 100%; padding: 14px; font-size: 15px; font-weight: 500; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; font-family: var(--sans); }
+.form-submit {
+  width: 100%; padding: 14px; font-size: 15px; font-weight: 500;
+  border: none; border-radius: 8px; cursor: pointer;
+  transition: all 0.2s; font-family: var(--sans);
+  background: var(--rose); color: #fff;
+}
+.form-submit:hover { background: var(--rose-dark); transform: translateY(-1px); }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 .form-submit.rose { background: var(--rose); color: #fff; }
 .form-submit.rose:hover { background: var(--rose-dark); }
 .form-submit.green { background: var(--green); color: #fff; }
 .form-submit.green:hover { background: #0a5240; }
 .form-note { font-size: 12px; color: var(--light); text-align: center; margin-top: 10px; }
+
+/* Emergency form overrides */
+.emg-form-section .form-group input:focus,
+.emg-form-section .form-group select:focus,
+.emg-form-section .form-group textarea:focus {
+  border-color: #E86A2C;
+  box-shadow: 0 0 0 3px rgba(232, 106, 44, 0.12);
+}
 
 /* ---- SUCCESS MESSAGE ---- */
 .form-success {
