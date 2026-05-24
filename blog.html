@@ -27,10 +27,39 @@
 .blog-card-img.gray { background: var(--off-white); }
 @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr; } }
 </style>
+<style>
+.breadcrumbs { max-width: var(--max-w); margin: 0 auto; padding: 14px 40px 0; font-size: 12px; color: var(--light); }
+.breadcrumbs a { color: var(--mid); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--rose); }
+.breadcrumbs .sep { margin: 0 8px; color: var(--border); }
+.breadcrumbs .current { color: var(--dark); }
+@media (max-width: 768px) { .breadcrumbs { padding: 12px 20px 0; font-size: 11px; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cooperestateplanning.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Estate Planning Resources & Blog",
+      "item": "https://www.cooperestateplanning.com/blog.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Estate Planning Resources & Blog</span></nav>
 
 <section class="section alt" style="padding-bottom:32px">
   <div class="container">
@@ -45,6 +74,88 @@
 
     <div class="blog-grid" id="blog-posts">
 
+      <!-- NEW: Emergency + Remote SEO push -->
+      <a href="blog/emergency-planning-48-hours.html" class="blog-card">
+        <div class="blog-card-img">&#9201;&#65039;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Emergency Planning</span>
+          <div class="blog-card-title">Emergency Estate Planning: What to Do When You Have 48 Hours</div>
+          <p class="blog-card-excerpt">A practical checklist for the moments when &ldquo;someday&rdquo; becomes &ldquo;by Friday.&rdquo;</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/will-drafted-in-hospital.html" class="blog-card">
+        <div class="blog-card-img green">&#127973;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Emergency Planning</span>
+          <div class="blog-card-title">Can You Get a Will Drafted in a Hospital?</div>
+          <p class="blog-card-excerpt">Yes &mdash; and it happens more often than you&rsquo;d think. Here&rsquo;s exactly how bedside estate planning works.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/remote-estate-planning-how-it-works.html" class="blog-card">
+        <div class="blog-card-img gray">&#128187;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Remote Planning</span>
+          <div class="blog-card-title">How Remote Estate Planning Actually Works (Step by Step)</div>
+          <p class="blog-card-excerpt">Most people are skeptical at first. By the end they wonder why anyone bothers driving across town. The whole process explained.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/will-or-trust-cost-kentucky.html" class="blog-card">
+        <div class="blog-card-img">&#128176;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Costs &amp; Pricing</span>
+          <div class="blog-card-title">How Much Does a Will or Trust Cost in Kentucky in 2026?</div>
+          <p class="blog-card-excerpt">Real numbers, not ranges. What estate planning costs in Kentucky right now &mdash; and what you actually get for the money.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/estate-planning-cost-comparison.html" class="blog-card">
+        <div class="blog-card-img green">&#128202;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Costs</span>
+          <div class="blog-card-title">How Much Does Estate Planning Actually Cost? Attorney vs. Online vs. DIY</div>
+          <p class="blog-card-excerpt">A straightforward 2026 breakdown of every option &mdash; from $0 to $50,000 &mdash; with the hidden cost of doing nothing.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/just-bought-a-house.html" class="blog-card">
+        <div class="blog-card-img gray">&#127968;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Life Events</span>
+          <div class="blog-card-title">Just Bought a House? Here&rsquo;s Why You Need an Estate Plan Now</div>
+          <p class="blog-card-excerpt">A home is the single biggest reason estates get stuck in probate. What new homeowners need to know.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/pour-over-will.html" class="blog-card">
+        <div class="blog-card-img">&#128203;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Documents</span>
+          <div class="blog-card-title">What Is a Pour-Over Will?</div>
+          <p class="blog-card-excerpt">It&rsquo;s not a standalone will. It&rsquo;s a safety net that works alongside your trust. Here&rsquo;s exactly what it does.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <a href="blog/estate-planning-checklist.html" class="blog-card">
+        <div class="blog-card-img green">&#9989;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Planning</span>
+          <div class="blog-card-title">The Estate Planning Checklist Most People Miss</div>
+          <p class="blog-card-excerpt">Documents are only part of an estate plan. Beneficiary designations, asset titling, and follow-through matter just as much.</p>
+          <div class="blog-card-meta">Allison Cooper &middot; May 2026</div>
+        </div>
+      </a>
+
+      <!-- EXISTING POSTS -->
       <a href="blog/emergency-estate-planning.html" class="blog-card">
         <div class="blog-card-img">&#9889;</div>
         <div class="blog-card-body">
@@ -145,7 +256,6 @@
         </div>
       </a>
 
-      <!-- NEW POSTS -->
       <a href="blog/estate-planning-new-parents.html" class="blog-card">
         <div class="blog-card-img green">&#128118;</div>
         <div class="blog-card-body">
@@ -156,7 +266,6 @@
         </div>
       </a>
 
-      <!-- COMING SOON -->
       <a href="blog/just-got-married.html" class="blog-card">
         <div class="blog-card-img">&#128141;</div>
         <div class="blog-card-body">
@@ -168,42 +277,92 @@
       </a>
 
       <!-- COMING SOON -->
-      <div class="blog-card" style="opacity:0.5;cursor:default">
-        <div class="blog-card-img gray">&#127968;</div>
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128293;</div>
         <div class="blog-card-body">
-          <span class="blog-card-tag">Life Events</span>
-          <div class="blog-card-title">Just Bought a House? Here&rsquo;s Why You Need an Estate Plan Now</div>
-          <p class="blog-card-excerpt">A home is probably the biggest asset you own. Here&rsquo;s how to make sure it goes where you want &mdash; without probate.</p>
+          <span class="blog-card-tag">Kentucky Specific</span>
+          <div class="blog-card-title">What Are &ldquo;Hot Powers&rdquo; in a Kentucky Power of Attorney?</div>
+          <p class="blog-card-excerpt">Kentucky law requires certain powers to be explicitly granted in a POA &mdash; or your agent can&rsquo;t use them, even when it&rsquo;s clearly what you wanted.</p>
           <div class="blog-card-meta">Coming soon</div>
         </div>
       </div>
 
-      <div class="blog-card" style="opacity:0.5;cursor:default">
-        <div class="blog-card-img gray">&#128209;</div>
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128214;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Probate Playbook</span>
+          <div class="blog-card-title">How to Handle a Simple Kentucky Probate Without an Attorney</div>
+          <p class="blog-card-excerpt">A first look at the upcoming Probate Playbook &mdash; for uncontested KY probates where the heirs agree and the assets are straightforward.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128176;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Specialized Planning</span>
+          <div class="blog-card-title">Estate Planning for Small Business Owners</div>
+          <p class="blog-card-excerpt">Your business is probably your biggest asset and your most personal one. Here&rsquo;s how to make sure it survives you.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128106;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Family Situations</span>
+          <div class="blog-card-title">Estate Planning for Blended Families: Protecting Everyone You Love</div>
+          <p class="blog-card-excerpt">Second marriages with children from prior relationships create the trickiest estate planning situations. Here&rsquo;s how to balance everyone&rsquo;s interests.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128221;</div>
         <div class="blog-card-body">
           <span class="blog-card-tag">Documents</span>
-          <div class="blog-card-title">What Is a Pour-Over Will?</div>
-          <p class="blog-card-excerpt">It&rsquo;s not a standalone will. It&rsquo;s a safety net that works alongside your trust. Here&rsquo;s why it matters and what happens without one.</p>
+          <div class="blog-card-title">Beneficiary Designations: The Forms That Override Your Will</div>
+          <p class="blog-card-excerpt">The most common estate planning failure isn&rsquo;t a bad will &mdash; it&rsquo;s a forgotten beneficiary form from 1998.</p>
           <div class="blog-card-meta">Coming soon</div>
         </div>
       </div>
 
-      <div class="blog-card" style="opacity:0.5;cursor:default">
-        <div class="blog-card-img">&#128176;</div>
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#127974;</div>
         <div class="blog-card-body">
-          <span class="blog-card-tag">Costs</span>
-          <div class="blog-card-title">How Much Does Estate Planning Actually Cost?</div>
-          <p class="blog-card-excerpt">Attorney fees, online services, and the cost of doing nothing. A straightforward breakdown of what estate planning costs in 2026.</p>
+          <span class="blog-card-tag">Multi-State</span>
+          <div class="blog-card-title">Estate Planning Across State Lines: KY, IN &amp; OH</div>
+          <p class="blog-card-excerpt">Property in two states? Lived in three different states across your life? Here&rsquo;s what changes &mdash; and what your plan needs to account for.</p>
           <div class="blog-card-meta">Coming soon</div>
         </div>
       </div>
 
-      <div class="blog-card" style="opacity:0.5;cursor:default">
-        <div class="blog-card-img green">&#9989;</div>
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128184;</div>
         <div class="blog-card-body">
-          <span class="blog-card-tag">Planning</span>
-          <div class="blog-card-title">The Estate Planning Checklist Most People Miss</div>
-          <p class="blog-card-excerpt">Documents are only part of it. Beneficiary designations, asset titling, and account registrations matter just as much. Here&rsquo;s the full list.</p>
+          <span class="blog-card-tag">Financial</span>
+          <div class="blog-card-title">Inheriting an IRA: What Heirs Need to Know in 2026</div>
+          <p class="blog-card-excerpt">The SECURE Act changed everything about inherited IRAs. Here&rsquo;s what beneficiaries actually need to do &mdash; and the tax mistakes to avoid.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128274;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Modern Assets</span>
+          <div class="blog-card-title">What Happens to Your Crypto When You Die?</div>
+          <p class="blog-card-excerpt">Cryptocurrency without a recovery plan is gone forever. Here&rsquo;s how to make sure your heirs can actually access it.</p>
+          <div class="blog-card-meta">Coming soon</div>
+        </div>
+      </div>
+
+      <div class="blog-card" style="opacity:0.55;cursor:default">
+        <div class="blog-card-img gray">&#128137;</div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">Life Events</span>
+          <div class="blog-card-title">Estate Planning Through Divorce</div>
+          <p class="blog-card-excerpt">Your estate plan needs an emergency update the moment you decide to separate &mdash; long before the divorce is final.</p>
           <div class="blog-card-meta">Coming soon</div>
         </div>
       </div>
@@ -216,10 +375,10 @@
 <!-- CTA -->
 <div class="cta-strip">
   <h2>Ready to stop putting it off?</h2>
-  <p>Submit a short intake form and I&rsquo;ll get back to you as soon as I can.</p>
+  <p>Submit a short intake form. Cooper Law responds within 2 business days under normal circumstances.</p>
   <div class="btn-group" style="justify-content:center">
     <a href="contact.html" class="btn btn-rose">Request a Consultation</a>
-    <a href="priority.html" class="btn btn-outline">Need It in 48 Hours?</a>
+    <a href="emergency.html" class="btn btn-outline">Need It in 48 Hours?</a>
   </div>
 </div>
 

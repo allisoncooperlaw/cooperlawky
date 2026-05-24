@@ -13,16 +13,45 @@
 <meta property="og:image" content="https://www.cooperestateplanning.com/images/allison.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
+<style>
+.breadcrumbs { max-width: var(--max-w); margin: 0 auto; padding: 14px 40px 0; font-size: 12px; color: var(--light); }
+.breadcrumbs a { color: var(--mid); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--rose); }
+.breadcrumbs .sep { margin: 0 8px; color: var(--border); }
+.breadcrumbs .current { color: var(--dark); }
+@media (max-width: 768px) { .breadcrumbs { padding: 12px 20px 0; font-size: 11px; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cooperestateplanning.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Request a Consultation",
+      "item": "https://www.cooperestateplanning.com/contact.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Request a Consultation</span></nav>
 
 <section class="section alt" style="text-align:center;padding:64px 40px 48px">
   <div class="container">
     <span class="eyebrow">Get Started</span>
     <h1>Ready to protect the people you love?</h1>
-    <p style="font-size:15px;color:var(--mid);max-width:520px;margin:0 auto;line-height:1.75">Submit a short intake form and I&rsquo;ll get back to you as soon as I can. No automated scheduling, no instant booking. If you have an upcoming surgery or time-sensitive situation, please note it in your message.</p>
+    <p style="font-size:15px;color:var(--mid);max-width:520px;margin:0 auto;line-height:1.75">Submit a short intake form. Every intake gets a thoughtful human review &mdash; no bots, no booking widgets. You&rsquo;ll receive a response from Cooper Law within 2 business days under normal circumstances. If you have an upcoming surgery or time-sensitive situation, please note it in your message and we&rsquo;ll prioritize it.</p>
   </div>
 </section>
 
@@ -58,7 +87,7 @@
 
         <div class="callout" style="margin-top:28px">
           <h4>Need documents as soon as possible?</h4>
-          <p>If you have an upcoming surgery, diagnosis, or travel and need documents fast, visit the <a href="priority.html" style="color:var(--rose)">Priority Planning page</a> for a shorter, faster intake process.</p>
+          <p>If you have an upcoming surgery, diagnosis, or travel and need documents fast, visit the <a href="emergency.html" style="color:var(--rose)">Estate Planning 911 page</a> for a shorter, faster intake process.</p>
         </div>
       </div>
 
@@ -123,8 +152,11 @@
             <textarea id="c_goals" name="planning_goals" class="form-control" rows="4" required placeholder="e.g. My husband and I have two young children and just bought a home. We want to make sure they're protected if something happens to us."></textarea>
           </div>
 
-          <button type="submit" class="form-submit rose">Submit Consultation Request</button>
-          <p class="form-note">I&rsquo;ll get back to you as soon as I can.</p>
+          <button type="submit" class="form-submit rose">Send My Information</button>
+          <div style="margin-top:14px;padding:14px 16px;background:var(--warm-white);border:1px solid var(--border-light);border-radius:8px">
+            <p style="font-size:12px;font-weight:500;color:var(--dark);margin:0 0 6px;text-transform:uppercase;letter-spacing:0.08em">What happens next</p>
+            <p style="font-size:13px;color:var(--mid);line-height:1.7;margin:0">Your intake is reviewed by an attorney at Cooper Law within 2 business days under normal circumstances. You&rsquo;ll receive an email with next steps &mdash; usually a short reply and a link to schedule a no-cost intro call. For urgent situations, call <a href="tel:5027541351" style="color:var(--rose);font-weight:500">502-754-1351</a> directly.</p>
+          </div>
           <p style="font-size:11px;color:var(--light);line-height:1.6;margin-top:10px;padding:10px 12px;background:var(--off-white);border-radius:6px;border:1px solid var(--border)">
             <strong style="color:var(--mid)">Please note:</strong> Submitting this form does not create an attorney-client relationship and does not constitute legal advice. Do not include highly confidential information in your message. An attorney-client relationship is only established upon execution of a signed engagement letter.
           </p>
@@ -132,7 +164,7 @@
 
         <div class="form-success" id="consultSuccess">
           <h4>Thank you for reaching out to Cooper Law!</h4>
-          <p>I&rsquo;ll get back to you as soon as I can. In the meantime, feel free to browse the <a href="estate-planning.html" style="color:var(--rose)">Estate Planning</a> page if you&rsquo;d like to learn more.</p>
+          <p>Cooper Law responds within 2 business days under normal circumstances. In the meantime, feel free to browse the <a href="estate-planning.html" style="color:var(--rose)">Estate Planning</a> page if you&rsquo;d like to learn more.</p>
           <p style="margin-top:8px;font-size:12px;color:var(--mid)">Questions in the meantime? Email <a href="mailto:allison@cooperlawky.com" style="color:var(--rose)">allison@cooperlawky.com</a> or call <a href="tel:5027541351" style="color:var(--rose)">502-754-1351</a>.</p>
         </div>
       </div>

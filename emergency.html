@@ -74,10 +74,39 @@
   .emg-hero .container { padding: 0 20px; }
 }
 </style>
+<style>
+.breadcrumbs { max-width: var(--max-w); margin: 0 auto; padding: 14px 40px 0; font-size: 12px; color: var(--light); }
+.breadcrumbs a { color: var(--mid); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--rose); }
+.breadcrumbs .sep { margin: 0 8px; color: var(--border); }
+.breadcrumbs .current { color: var(--dark); }
+@media (max-width: 768px) { .breadcrumbs { padding: 12px 20px 0; font-size: 11px; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cooperestateplanning.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Estate Planning 911 | Emergency Wills &amp; Trusts in 48&ndash;72 Hours",
+      "item": "https://www.cooperestateplanning.com/emergency.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Estate Planning 911 | Emergency Wills &amp; Trusts in 48&ndash;72 Hours</span></nav>
 
 <!-- HERO -->
 <div class="emg-hero">
@@ -176,6 +205,13 @@
     </div>
 
     <p style="font-size:12px;color:var(--light);font-style:italic;margin-top:16px">Both packages are flat fees &mdash; this is the total cost. Payment is collected upon engagement via secure payment link sent with your engagement letter. Payment plans available upon request.</p>
+
+    <!-- EMERGENCY PREMIUM JUSTIFICATION -->
+    <div style="margin-top:28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;max-width:760px">
+      <h4 style="font-family:var(--sans);font-size:15px;font-weight:500;color:var(--dark);margin-bottom:10px">Why emergency planning costs more than standard planning</h4>
+      <p style="font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:10px">Three reasons. <strong style="color:var(--dark)">Compressed timeline</strong> &mdash; drafting and reviewing a complete plan in 48&ndash;72 hours means rearranging my standard calendar and putting your file at the front of every queue. <strong style="color:var(--dark)">Off-hours work</strong> &mdash; emergency engagements often involve evening and weekend drafting. <strong style="color:var(--dark)">Direct logistical coordination</strong> &mdash; for in-person signings at hospitals or facilities, I&rsquo;m taking the work to you, which takes more time than a standard scheduled signing.</p>
+      <p style="font-size:14px;color:var(--mid);line-height:1.75;margin:0">The premium reflects the real cost of dropping everything else. It is still meaningfully less than what most attorneys charge for emergency work, where hourly billing under time pressure can easily push past $7,000&ndash;$10,000 for the same documents.</p>
+    </div>
   </div>
 </section>
 
@@ -195,6 +231,12 @@
         <h4>&#128187; Anywhere in KY, IN &amp; OH &mdash; remote</h4>
         <p>Clients outside the Louisville area are served by phone and video conference. Documents are delivered electronically with detailed, step-by-step signing and execution instructions &mdash; so you know exactly what to sign, who needs to witness, and what needs to be notarized. Distance hospital visits may be accommodated under limited circumstances &mdash; call to discuss.</p>
       </div>
+    </div>
+
+    <!-- HOMEBOUND -->
+    <div style="margin-top:24px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px">
+      <h4 style="font-family:var(--sans);font-size:15px;font-weight:500;color:var(--dark);margin-bottom:8px">&#127968; What if I&rsquo;m homebound?</h4>
+      <p style="font-size:14px;color:var(--mid);line-height:1.75;margin:0">If you can&rsquo;t leave home, remote estate planning is the cleanest option. Drafting and review happen by phone and video. For the signing, you have two good choices: <strong style="color:var(--dark)">remote online notarization</strong> (the notary witnesses your signing entirely over video), or <strong style="color:var(--dark)">a mobile notary visit</strong> (a notary travels to your home, typically $25&ndash;$75). House calls from Allison are not available &mdash; for safety reasons she doesn&rsquo;t do home visits &mdash; but the combination of remote planning plus a remote or mobile notary gets you a fully executed plan without ever stepping out the door.</p>
     </div>
   </div>
 </section>
@@ -284,7 +326,7 @@
 
       <div id="emergencySuccess" style="display:none;text-align:center;padding:40px 0">
         <p style="font-size:28px;margin-bottom:12px">&#9989;</p>
-        <h3 style="font-family:var(--serif);font-size:22px;font-weight:500;color:var(--dark);margin-bottom:8px">Thank you &mdash; I&rsquo;ll be in touch soon.</h3>
+        <h3 style="font-family:var(--serif);font-size:22px;font-weight:500;color:var(--dark);margin-bottom:8px">Thank you &mdash; we&rsquo;ll be in touch as soon as possible.</h3>
         <p style="font-size:14px;color:var(--mid);line-height:1.7">Emergency requests are handled ahead of standard intake. If you have an urgent deadline, call <strong><a href="tel:5027541351" style="color:#E86A2C">502-754-1351</a></strong> directly.</p>
       </div>
 

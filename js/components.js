@@ -10,7 +10,7 @@ function getPageName() {
   if (path.includes('young-adults')) return 'young-adults';
   if (path.includes('estate-planning')) return 'estate-planning';
   if (path.includes('services')) return 'services';
-  if (path.includes('priority')) return 'priority';
+  if (path.includes('emergency')) return 'emergency';
   if (path.includes('about')) return 'about';
   if (path.includes('blog')) return 'blog';
   if (path.includes('contact')) return 'contact';
@@ -23,7 +23,7 @@ function renderNav() {
     { href: 'index.html', label: 'Home', key: 'home' },
     { href: 'estate-planning.html', label: 'Estate Planning', key: 'estate-planning' },
     { href: 'services.html', label: 'Services + Pricing', key: 'services' },
-    { href: 'priority.html', label: 'Priority Planning', key: 'priority' },
+    { href: 'emergency.html', label: 'Emergency Planning', key: 'emergency' },
     { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
@@ -68,7 +68,7 @@ function renderFooter() {
     <div class="footer-right">
       &copy; 2026 Cooper Law, LLC<br>
       Licensed in Kentucky &bull; Indiana &bull; Ohio<br>
-      <a href="privacy.html">Privacy Policy</a> &bull; <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a> &bull; <a href="terms.html">Terms of Use</a> &bull; <a href="accessibility.html">Accessibility</a> &bull; <a href="mailto:allison@cooperlawky.com?subject=Website%20Accessibility%20Issue">Report an issue</a>
     </div>
   </div>
   <div style="border-top:1px solid var(--border);margin-top:16px;padding-top:14px;max-width:var(--max-w);margin-left:auto;margin-right:auto">
@@ -132,8 +132,43 @@ mobileStyle.textContent = `
 `;
 document.head.appendChild(mobileStyle);
 
+// Skip-to-content link for screen reader and keyboard users
+// Inserts a hidden-until-focused link as the first element in <body>
+function injectSkipLink() {
+  // Avoid duplicate injection
+  if (document.getElementById('skip-to-content-link')) return;
+
+  const skipLink = document.createElement('a');
+  skipLink.id = 'skip-to-content-link';
+  skipLink.href = '#main-content';
+  skipLink.textContent = 'Skip to main content';
+  skipLink.style.cssText = 'position:absolute;left:-9999px;top:0;z-index:9999;padding:12px 18px;background:var(--rose);color:#fff;text-decoration:none;font-family:var(--sans);font-size:14px;font-weight:500;border-radius:0 0 8px 0;';
+  skipLink.addEventListener('focus', () => {
+    skipLink.style.left = '0';
+  });
+  skipLink.addEventListener('blur', () => {
+    skipLink.style.left = '-9999px';
+  });
+  document.body.insertBefore(skipLink, document.body.firstChild);
+
+  // Ensure there's a #main-content target — find the first <main> or first major content section
+  if (!document.getElementById('main-content')) {
+    const target = document.querySelector('main') ||
+                   document.querySelector('section') ||
+                   document.querySelector('.post-hero') ||
+                   document.querySelector('.book-hero') ||
+                   document.querySelector('.calc-hero') ||
+                   document.querySelector('.hero');
+    if (target) {
+      target.id = 'main-content';
+      target.setAttribute('tabindex', '-1');
+    }
+  }
+}
+
 // Init
 document.addEventListener('DOMContentLoaded', () => {
+  injectSkipLink();
   renderNav();
   renderFooter();
 });
