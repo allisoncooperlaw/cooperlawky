@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estate Planning Services &amp; Pricing | Cooper Law | KY, IN &amp; OH</title>
+<title>Estate Planning Services &amp; Pricing | Cooper Law</title>
 <meta name="description" content="Transparent, flat-fee estate planning from a JD, CPA, and CFP®. Wills, trusts, powers of attorney — pricing posted because you deserve to know before you commit. KY, IN &amp; OH.">
 <link rel="canonical" href="https://www.cooperestateplanning.com/services.html">
 <meta property="og:title" content="Estate Planning Services &amp; Pricing | Cooper Law">
 <meta property="og:description" content="Transparent, flat-fee estate planning from a JD, CPA, and CFP®. Pricing posted because you deserve to know before you commit.">
 <meta property="og:url" content="https://www.cooperestateplanning.com/services.html">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.cooperestateplanning.com/images/allison.jpg">
+<meta property="og:image" content="https://www.cooperestateplanning.com/images/og-share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -31,6 +31,7 @@
 
 .svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 16px; }
 .svc-grid-single { grid-template-columns: 1fr; max-width: 420px; }
+.svc-grid-3 { grid-template-columns: repeat(3, 1fr); }
 
 .svc-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 28px 24px; position: relative; }
 .svc-card-featured { border: 2px solid var(--rose); }
@@ -85,7 +86,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .svc-grid { grid-template-columns: 1fr; }
+  .svc-grid, .svc-grid-3 { grid-template-columns: 1fr; }
   .addon-grid { grid-template-columns: 1fr; }
   .delivery-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
@@ -143,7 +144,7 @@
     <div class="svc-section-title">I just need one or two things</div>
     <p class="svc-section-intro">You know what you need, or you&rsquo;re not ready for a full plan yet. These are individual documents drafted correctly for your state.</p>
 
-    <div class="svc-grid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="svc-grid svc-grid-3">
       <div class="svc-card">
         <div class="svc-card-name">Just one document</div>
         <div class="svc-card-who">A single power of attorney, living will, or medical POA &mdash; drafted for Kentucky, Indiana, or Ohio and delivered with signing instructions.</div>
@@ -275,10 +276,26 @@
     <div class="svc-section-title">Your child just turned 18</div>
     <p class="svc-section-intro">The day they turn 18, you lose the legal ability to make medical or financial decisions for them &mdash; even in an emergency &mdash; unless the right documents are in place.</p>
 
-    <div class="svc-grid svc-grid-single">
+    <div class="svc-grid svc-grid-3">
+      <div class="svc-card svc-card-featured">
+        <span class="svc-badge svc-badge-popular">Most popular</span>
+        <div class="svc-card-name">Essentials Plan</div>
+        <div class="svc-card-who">For most young adults with no real assets &mdash; just the documents that let a parent step in if something goes wrong. No will.</div>
+        <div class="svc-card-price">$500</div>
+        <div class="svc-card-timeline">1&ndash;2 weeks</div>
+        <div class="svc-card-priority">Priority: 48&ndash;72 hours (+$400)</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">What&rsquo;s in this</div>
+          <div class="svc-card-item">Durable power of attorney (financial)</div>
+          <div class="svc-card-item">Living will / advance directive</div>
+          <div class="svc-card-item">Medical POA / healthcare surrogate</div>
+          <div class="svc-card-item">HIPAA authorization</div>
+        </div>
+      </div>
+
       <div class="svc-card">
-        <div class="svc-card-name">Young adult protection plan</div>
-        <div class="svc-card-who">Designed for clients under 25. Gives parents the legal authority to step in for their adult child if something happens &mdash; and gives the young adult peace of mind that someone they trust is designated.</div>
+        <div class="svc-card-name">Protection Plan</div>
+        <div class="svc-card-who">Everything in Essentials plus a simple last will and testament &mdash; a good fit for young adults who want a will in place too.</div>
         <div class="svc-card-price">$1,000</div>
         <div class="svc-card-timeline">1&ndash;2 weeks</div>
         <div class="svc-card-priority">Priority: 48&ndash;72 hours (+$400)</div>
@@ -290,9 +307,25 @@
           <div class="svc-card-item">Medical POA / healthcare surrogate</div>
           <div class="svc-card-item">HIPAA authorization &mdash; so parents can still talk to their child&rsquo;s doctors</div>
         </div>
-        <div class="svc-card-note">Priced so that cost isn&rsquo;t the reason families put this off. <a href="young-adults.html" style="color:var(--rose);font-weight:500">Learn more &rarr;</a></div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-card-name">Foundation Plan</div>
+        <div class="svc-card-who">For young adults with real assets &mdash; inheritance, a home, business interests, or significant savings &mdash; who want a trust-based plan from the start.</div>
+        <div class="svc-card-price">$1,800</div>
+        <div class="svc-card-timeline">3&ndash;4 weeks</div>
+        <div class="svc-card-includes">
+          <div class="svc-card-includes-label">Everything in the Protection Plan, plus</div>
+          <div class="svc-card-item">Revocable living trust</div>
+          <div class="svc-card-item">Pour-over will (replaces the simple will)</div>
+          <div class="svc-card-item">Certificate of trust</div>
+          <div class="svc-card-item">Trust funding instructions</div>
+        </div>
+        <div class="svc-card-note">Trust funding (asset re-titling) is a separate engagement priced based on the work involved.</div>
       </div>
     </div>
+
+    <p style="font-size:13px;color:var(--mid);margin-top:14px">All three tiers are discounted for clients under 25, and priced so cost isn&rsquo;t the reason families put this off. <a href="young-adults.html" style="color:var(--rose);font-weight:500">See full details on all three plans &rarr;</a></p>
   </div>
 </section>
 
@@ -341,18 +374,18 @@
 
     <div class="delivery-grid">
       <div class="delivery-card">
-        <div class="delivery-icon">&#128231;</div>
+        <div class="delivery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M4 7l8 5.5L20 7"/></svg></div>
         <h4>Electronic delivery</h4>
         <p>Secure PDF with annotated signing instructions. Callout boxes show exactly what to sign, witness, and notarize. Print at home and execute.</p>
       </div>
       <div class="delivery-card">
-        <div class="delivery-icon">&#128236;</div>
+        <div class="delivery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
         <h4>Mailed signing kit</h4>
         <p>Printed documents mailed with tabbed signing instructions and signing stickers. Standard shipping included. Allow 3&ndash;5 additional days.</p>
         <p style="font-size:10px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">Cooper Law&rsquo;s obligation is fulfilled upon delivery to the postal carrier. Clients with time-sensitive deadlines are strongly encouraged to choose electronic delivery.</p>
       </div>
       <div class="delivery-card">
-        <div class="delivery-icon">&#129309;</div>
+        <div class="delivery-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17.5" cy="9" r="2.3"/><path d="M16 14c2.8 0 5 2 5 5"/></svg></div>
         <h4>In-person signing</h4>
         <p>Louisville-area clients are welcome to schedule an in-person signing at the Cooper Law office. For hospitalized clients or clients in nursing facilities, Allison is available on-site by arrangement. House calls are not generally available.</p>
         <p style="font-size:10px;color:var(--light);margin-top:8px;line-height:1.6;font-style:italic">In-person signings are by appointment and subject to scheduling. Hospital and facility visits are limited to the Louisville area. Please mention your preference in your intake form.</p>

@@ -108,6 +108,25 @@ p:last-child { margin-bottom: 0; }
 .card.green-top { border-top: 3px solid var(--green); }
 .card-icon { font-size: 28px; margin-bottom: 14px; }
 
+/* ---- BRAND ICONS ---- */
+.icon-badge {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: var(--rose-light); border: 1px solid var(--rose-mid);
+  display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
+}
+.icon-badge svg { width: 26px; height: 26px; fill: none; stroke: var(--rose-dark); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.icon-badge.green { background: var(--green-light); border-color: var(--green-mid); }
+.icon-badge.green svg { stroke: var(--green); }
+.team-banner-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--rose-dark); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.delivery-icon svg { width: 30px; height: 30px; fill: none; stroke: var(--rose-dark); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---- SECTION ACCENT ---- */
+.eyebrow::before {
+  content: ""; display: inline-block; width: 18px; height: 2px;
+  background: var(--rose); vertical-align: middle; margin-right: 10px; border-radius: 2px;
+}
+.eyebrow.green::before { background: var(--green); }
+
 /* ---- CALLOUTS ---- */
 .callout {
   background: #fff; border: 1px solid var(--border);
