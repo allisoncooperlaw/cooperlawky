@@ -3,7 +3,7 @@
    Nav, Footer, and utilities
    ============================================= */
 
-const NAV_LOGO_SVG = `<img src="images/logo.svg" alt="Cooper Law" style="height:90px;width:auto;display:block;">`;
+const navLogo = (base) => `<img src="${base}images/logo.svg" alt="Cooper Law" style="height:90px;width:auto;display:block;">`;
 
 function getPageName() {
   const path = window.location.pathname;
@@ -14,44 +14,57 @@ function getPageName() {
   if (path.includes('about')) return 'about';
   if (path.includes('blog')) return 'blog';
   if (path.includes('contact')) return 'contact';
+  if (path.includes('advisors')) return 'advisors';
   return 'home';
 }
 
 function renderNav() {
+  const placeholder = document.getElementById('nav-placeholder');
+  const base = (placeholder && placeholder.dataset.base) ? placeholder.dataset.base : '';
   const current = getPageName();
   const links = [
     { href: 'index.html', label: 'Home', key: 'home' },
     { href: 'estate-planning.html', label: 'Estate Planning', key: 'estate-planning' },
-    { href: 'services.html', label: 'Services + Pricing', key: 'services' },
-    { href: 'emergency.html', label: 'Emergency Planning', key: 'emergency' },
+    { href: 'services.html', label: 'Services', key: 'services' },
+    { href: 'emergency.html', label: 'Emergency', key: 'emergency' },
     { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
+    { href: 'advisors.html', label: 'Advisors', key: 'advisors' },
     { href: 'contact.html', label: 'Contact', key: 'contact' },
   ];
   const navHTML = `
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      ${NAV_LOGO_SVG}
+    <a class="nav-logo" href="${base}index.html">
+      ${navLogo(base)}
     </a>
     <div class="nav-links">
-      ${links.map(l => `<a href="${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
+      ${links.map(l => `<a href="${base}${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
     </div>
-    <a href="contact.html" class="nav-cta-btn">Get Started</a>
+    <a href="${base}contact.html" class="nav-cta-btn">Get Started</a>
     <button class="nav-mobile-toggle" onclick="toggleMobileNav()" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="3" width="22" height="2" rx="1" fill="#666"/><rect y="10" width="22" height="2" rx="1" fill="#666"/><rect y="17" width="22" height="2" rx="1" fill="#666"/></svg>
     </button>
   </div>
   <div class="nav-mobile-menu" id="mobileMenu">
-    ${links.map(l => `<a href="${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
-    <a href="contact.html" class="btn btn-rose" style="margin:8px 0">Get Started</a>
+    ${links.map(l => `<a href="${base}${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
+    <a href="${base}contact.html" class="btn btn-rose" style="margin:8px 0">Get Started</a>
   </div>
 </nav>`;
-  document.getElementById('nav-placeholder').innerHTML = navHTML;
+  placeholder.innerHTML = navHTML;
 }
 
 function renderFooter() {
+  const navPh = document.getElementById('nav-placeholder');
+  const base = (navPh && navPh.dataset.base) ? navPh.dataset.base : '';
+  const cities = [
+    { href: 'louisville-estate-planning.html', label: 'Louisville' },
+    { href: 'lexington-estate-planning.html', label: 'Lexington' },
+    { href: 'bowling-green-estate-planning.html', label: 'Bowling Green' },
+    { href: 'indianapolis-estate-planning.html', label: 'Indianapolis' },
+    { href: 'cincinnati-estate-planning.html', label: 'Cincinnati' },
+  ];
   const footerHTML = `
 <footer class="site-footer">
   <div class="footer-inner">
@@ -68,8 +81,15 @@ function renderFooter() {
     <div class="footer-right">
       &copy; 2026 Cooper Law, LLC<br>
       Licensed in Kentucky &bull; Indiana &bull; Ohio<br>
-      <a href="privacy.html">Privacy Policy</a> &bull; <a href="terms.html">Terms of Use</a> &bull; <a href="accessibility.html">Accessibility</a> &bull; <a href="mailto:allison@cooperlawky.com?subject=Website%20Accessibility%20Issue">Report an issue</a>
+      <a href="${base}advisors.html">For Financial Advisors &amp; Agents</a><br>
+      <a href="${base}privacy.html">Privacy Policy</a> &bull; <a href="${base}terms.html">Terms of Use</a> &bull; <a href="${base}accessibility.html">Accessibility</a> &bull; <a href="mailto:allison@cooperlawky.com?subject=Website%20Accessibility%20Issue">Report an issue</a>
     </div>
+  </div>
+  <div style="border-top:1px solid var(--border);margin-top:16px;padding-top:14px;max-width:var(--max-w);margin-left:auto;margin-right:auto">
+    <p style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--light);margin:0 0 6px">Estate planning service areas</p>
+    <p style="font-size:12px;color:var(--mid);margin:0;line-height:1.9">
+      ${cities.map(c => `<a href="${base}${c.href}" style="color:var(--mid)">${c.label}</a>`).join(' &bull; ')} &mdash; serving families across Kentucky, Indiana &amp; Ohio
+    </p>
   </div>
   <div style="border-top:1px solid var(--border);margin-top:16px;padding-top:14px;max-width:var(--max-w);margin-left:auto;margin-right:auto">
     <p style="font-size:10px;color:var(--light);line-height:1.7;margin:0;text-align:center">
