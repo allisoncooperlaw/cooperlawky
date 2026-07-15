@@ -25,15 +25,18 @@ function renderNav() {
   const current = getPageName();
   const links = [
     { href: 'estate-planning.html', label: 'Estate Planning', key: 'estate-planning' },
-    { href: 'services.html', label: 'Services', key: 'services' },
-    { href: 'emergency.html', label: 'Emergency', key: 'emergency' },
-    { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
-    { href: 'miller-trust.html', label: 'Miller Trust', key: 'miller-trust' },
+    { href: 'services.html', label: 'Services', key: 'services', children: [
+      { href: 'services.html', label: 'All Services', key: 'services' },
+      { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
+      { href: 'emergency.html', label: 'Emergency Estate Planning', key: 'emergency' },
+      { href: 'miller-trust.html', label: 'Miller Trust', key: 'miller-trust' },
+    ] },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
-    { href: 'advisors.html', label: 'Planning Partners', key: 'advisors' },
+    { href: 'advisors.html', label: 'Partners', key: 'advisors' },
     { href: 'contact.html', label: 'Contact', key: 'contact' },
   ];
+  const isCurrent = (l) => l.key === current || (l.children && l.children.some(c => c.key === current));
   const navHTML = `
 <nav class="site-nav">
   <div class="nav-inner">
@@ -41,7 +44,17 @@ function renderNav() {
       ${navLogo(base)}
     </a>
     <div class="nav-links">
-      ${links.map(l => `<a href="${base}${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
+      ${links.map(l => {
+        if (l.children) {
+          return `<div class="nav-item has-dropdown">
+      <a href="${base}${l.href}" class="${isCurrent(l) ? 'active' : ''}">${l.label} <span class="nav-caret" aria-hidden="true">&#9662;</span></a>
+      <div class="nav-dropdown">
+        ${l.children.map(c => `<a href="${base}${c.href}" class="${c.key === current ? 'active' : ''}">${c.label}</a>`).join('')}
+      </div>
+    </div>`;
+        }
+        return `<a href="${base}${l.href}" class="${isCurrent(l) ? 'active' : ''}">${l.label}</a>`;
+      }).join('')}
     </div>
     <a href="${base}contact.html" class="nav-cta-btn">Get Started</a>
     <button class="nav-mobile-toggle" onclick="toggleMobileNav()" aria-label="Menu">
@@ -49,7 +62,13 @@ function renderNav() {
     </button>
   </div>
   <div class="nav-mobile-menu" id="mobileMenu">
-    ${links.map(l => `<a href="${base}${l.href}" class="${l.key === current ? 'active' : ''}">${l.label}</a>`).join('')}
+    ${links.map(l => {
+      let html = `<a href="${base}${l.href}" class="${isCurrent(l) ? 'active' : ''}">${l.label}</a>`;
+      if (l.children) {
+        html += l.children.filter(c => c.href !== l.href).map(c => `<a href="${base}${c.href}" class="mobile-sub ${c.key === current ? 'active' : ''}">${c.label}</a>`).join('');
+      }
+      return html;
+    }).join('')}
     <a href="${base}contact.html" class="btn btn-rose" style="margin:8px 0">Get Started</a>
   </div>
 </nav>`;
@@ -140,6 +159,30 @@ function setupForm(formId, successId, endpoint) {
 // Mobile nav style
 const mobileStyle = document.createElement('style');
 mobileStyle.textContent = `
+  .nav-links { align-items: center; }
+  .nav-item { position: relative; display: flex; align-items: center; }
+  .nav-item.has-dropdown > a { display: inline-flex; align-items: center; }
+  .nav-caret { font-size: 9px; margin-left: 4px; line-height: 1; }
+  /* invisible bridge so the menu doesn't close in the gap */
+  .nav-item.has-dropdown::after {
+    content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px;
+  }
+  .nav-dropdown {
+    position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%) translateY(4px);
+    background: #fff; border: 1px solid var(--border-light); border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10); padding: 8px; min-width: 220px;
+    display: flex; flex-direction: column; gap: 2px;
+    opacity: 0; visibility: hidden; transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 200;
+  }
+  .nav-item.has-dropdown:hover .nav-dropdown,
+  .nav-item.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+  }
+  .nav-dropdown a {
+    font-size: 13px; color: var(--mid); padding: 9px 14px; border-radius: 7px; white-space: nowrap; transition: background .12s, color .12s;
+  }
+  .nav-dropdown a:hover, .nav-dropdown a.active { color: var(--rose); background: var(--rose-light); }
+
   .nav-mobile-menu {
     flex-direction: column; padding: 16px 24px 20px;
     border-top: 1px solid var(--border-light);
@@ -150,6 +193,9 @@ mobileStyle.textContent = `
     border-bottom: 1px solid var(--border-light);
   }
   .nav-mobile-menu a.active { color: var(--rose); }
+  .nav-mobile-menu a.mobile-sub {
+    padding-left: 16px; font-size: 14px; color: var(--light);
+  }
 `;
 document.head.appendChild(mobileStyle);
 
