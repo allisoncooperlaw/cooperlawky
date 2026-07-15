@@ -8,6 +8,7 @@ const navLogo = (base) => `<img src="${base}images/logo.svg" alt="Cooper Law" st
 function getPageName() {
   const path = window.location.pathname;
   if (path.includes('young-adults')) return 'young-adults';
+  if (path.includes('miller-trust')) return 'miller-trust';
   if (path.includes('estate-planning')) return 'estate-planning';
   if (path.includes('services')) return 'services';
   if (path.includes('emergency')) return 'emergency';
@@ -23,14 +24,14 @@ function renderNav() {
   const base = (placeholder && placeholder.dataset.base) ? placeholder.dataset.base : '';
   const current = getPageName();
   const links = [
-    { href: 'index.html', label: 'Home', key: 'home' },
     { href: 'estate-planning.html', label: 'Estate Planning', key: 'estate-planning' },
     { href: 'services.html', label: 'Services', key: 'services' },
     { href: 'emergency.html', label: 'Emergency', key: 'emergency' },
     { href: 'young-adults.html', label: 'Young Adults', key: 'young-adults' },
+    { href: 'miller-trust.html', label: 'Miller Trust', key: 'miller-trust' },
     { href: 'about.html', label: 'About', key: 'about' },
     { href: 'blog.html', label: 'Resources', key: 'blog' },
-    { href: 'advisors.html', label: 'Advisors', key: 'advisors' },
+    { href: 'advisors.html', label: 'Planning Partners', key: 'advisors' },
     { href: 'contact.html', label: 'Contact', key: 'contact' },
   ];
   const navHTML = `
