@@ -96,6 +96,7 @@ function renderFooter() {
           <a href="tel:5027541351">502-754-1351</a> &bull;
           <a href="mailto:allison@cooperlawky.com">allison@cooperlawky.com</a>
         </div>
+        <a href="https://www.bbb.org/us/ky/louisville/profile/estate-planning-attorneys/cooper-law-llc-0402-235922367/#sealclick" target="_blank" rel="nofollow" style="display:inline-block;margin-top:14px"><img src="https://seal-louisville.bbb.org/seals/blue-seal-293-61-bbb-235922367.png" style="border:0;max-width:100%;height:auto;" alt="Cooper Law LLC BBB Business Review, accredited since 2026"></a>
       </div>
     </div>
     <div class="footer-right">
